@@ -7,8 +7,10 @@ async function scraping_tempo(url) {
 
     const { data } = await axios.get(url, {
         headers: {
+            "Origin": "https://www.tempo.co",
+            "Referer": "https://www.tempo.co/",
             "User-Agent":
-                "Mozilla/5.0"
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
         }
     });
 
@@ -50,8 +52,10 @@ async function scraping_tempo_for_cluster(url) {
 
     const { data } = await axios.get(url, {
         headers: {
+            "Origin": "https://www.tempo.co",
+            "Referer": "https://www.tempo.co/",
             "User-Agent":
-                "Mozilla/5.0"
+                "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
         }
     });
 
@@ -62,6 +66,12 @@ async function scraping_tempo_for_cluster(url) {
     const content = [];
 
     const source = "Tempo.co";
+
+    const thumbnails = $("figure img")
+        .first()
+        .attr("src") || "";
+
+    console.log(`tes gambar tempo: ${thumbnails}`);
 
     $("#content-wrapper p").each((i, el) => {
         const text = $(el).text().trim();
@@ -86,6 +96,7 @@ async function scraping_tempo_for_cluster(url) {
         title,
         source,
         summary,
+        thumbnails
     }
 }
 

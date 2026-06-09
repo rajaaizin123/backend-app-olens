@@ -246,7 +246,12 @@ async function get_latestNews_tempo() {
         },
         {
             headers: {
-                "Content-Type": "application/json"
+                "Content-Type": "application/json",
+                "Origin": "https://www.tempo.co",
+                "Referer": "https://www.tempo.co/",
+                "User-Agent":
+                    "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36",
+                "Accept": "application/json"
             }
         }
     );

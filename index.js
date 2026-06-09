@@ -9,6 +9,7 @@ const { scraping_tribunnews, scraping_tribunnews_for_cluster } = require("./scra
 const { scraping_kompas, scraping_kompas_for_cluster } = require("./scraping_kompas");
 const { get_headlineNews_detik, get_PopularNews, get_latestNews_tribun, get_latestNews_kompas, get_latestNews_tempo, get_latestNews_detik } = require("./get_headline_news");
 const { getAllLinkMedia_for_cluster, getDecodedLinks } = require('./scraping_raw_cluster');
+const { AppErrorCodes } = require("firebase-admin/app");
 
 const app = express();
 
@@ -276,12 +277,18 @@ app.get("/tempo_summary_for_cluster", async (req, res) => {
         const limit = pLimit(5);
         // data 25 link media tempo
         const tempoLinks = await getDecodedLinks("tempo.co");
+        //console.log(tempoLinks);
 
         const articles = await Promise.all(
             tempoLinks.map(item =>
-                limit(() =>
-                    scraping_tempo_for_cluster(item.link)
-                )
+                limit(async () => {
+                    const article = await scraping_tempo_for_cluster(item.link);
+
+                    return {
+                        ...article,
+                        link: item.link,
+                    }
+                })
             )
         );
 
@@ -310,9 +317,15 @@ app.get("/tribun_summary_for_cluster", async (req, res) => {
 
         const articles = await Promise.all(
             tempoLinks.map(item =>
-                limit(() =>
-                    scraping_tribunnews_for_cluster(item.link)
-                )
+                limit(async () => {
+                    const article = await scraping_tribunnews_for_cluster(item.link);
+
+                    return {
+                        ...article,
+                        link: item.link,
+
+                    }
+                })
             )
         );
 
@@ -346,7 +359,7 @@ app.get("/detik_summary_for_cluster", async (req, res) => {
 
                     let scrapper;
 
-                    if (host_detik === "news.detik.com") {
+                    if (host_detik === "news.detik.com" || host_detik === "www.detik.com") {
                         scraper = scraping_detikCom_for_cluster;
                     }
                     else if (host_detik === "detiknews.id") {
@@ -356,7 +369,13 @@ app.get("/detik_summary_for_cluster", async (req, res) => {
                         throw new Error(`hostname tak didukung: ${host_detik}`);
                     }
 
-                    return await scraper(item.link);
+                    const article = await scraper(item.link);
+
+                    return {
+                        ...article,
+                        link: item.link,
+                        thumbnails: article.thumbnails,
+                    }
                 })
             )
         );
@@ -386,9 +405,15 @@ app.get("/kompas_summary_for_cluster", async (req, res) => {
 
         const articles = await Promise.all(
             tempoLinks.map(item =>
-                limit(() =>
-                    scraping_kompas_for_cluster(item.link)
-                )
+                limit(async () => {
+                    const article = await scraping_kompas_for_cluster(item.link);
+
+                    return {
+                        ...article,
+                        link: item.link,
+                        thumbnails: article.thumbnails,
+                    }
+                })
             )
         );
 

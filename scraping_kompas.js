@@ -131,6 +131,13 @@ async function scraping_kompas_for_cluster(url) {
 
     const content = [];
 
+    const thumbnails =
+        $(".photo__wrap img").attr("src") ||
+
+        "";
+
+    const source = "kompas";
+
     $(".read__content p, .read__content h2").each((i, el) => {
         const text = $(el).text().trim();
 
@@ -158,7 +165,9 @@ async function scraping_kompas_for_cluster(url) {
 
     return {
         title,
-        summary
+        summary,
+        source,
+        thumbnails
     };
 }
 

@@ -25,7 +25,7 @@ const BATCH_SIZE = parseInt(process.env.BATCH_SIZE || "100");
 // =====================
 async function fetchArticles() {
     const snapshot = await db
-        .collection("artikel_berita")
+        .collection("artikel_berita_3")
         .limit(BATCH_SIZE)
         .get();
 
@@ -37,6 +37,8 @@ async function fetchArticles() {
             title: d.title || "",
             summary: d.summary || "",
             source: d.source || "",
+            thumbnails: d.thumbnails || "",
+            link: d.link || ""
         };
     });
 }
@@ -66,7 +68,7 @@ async function saveTopics(result) {
     const topics = result.topics || [];
 
     topics.forEach(topic => {
-        const ref = db.collection("cluster_topics").doc();
+        const ref = db.collection("cluster_topics_3").doc();
 
         batch.set(ref, {
             topic_id: topic.topic_id,

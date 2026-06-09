@@ -86,6 +86,10 @@ async function scraping_detikId_for_cluster(url) {
 
     const article = $(".entry-content").clone();
 
+    const thumbnails = $(".content-thumbnail img")
+        .attr("src") || "";
+
+    const source = "Detik";
 
     // hapus elemen bukan isi artikel
     article.find(".noncontent").remove();
@@ -97,7 +101,6 @@ async function scraping_detikId_for_cluster(url) {
     article.find(".clearfix").remove();
 
     const content = [];
-    const source = "Detik";
 
     article.contents().each((_, el) => {
         let text = $(el).text().trim();
@@ -137,7 +140,9 @@ async function scraping_detikId_for_cluster(url) {
 
     return {
         title,
-        summary
+        summary,
+        thumbnails,
+        source
     }
 }
 
@@ -157,6 +162,8 @@ async function scraping_detikCom_for_cluster(url) {
 
     const article = $(".detail__body-text").clone();
 
+    const thumbnails = $(".detail__media img")
+        .attr("src") || "";
 
     // hapus elemen bukan isi artikel
     article.find(".noncontent").remove();
@@ -206,7 +213,9 @@ async function scraping_detikCom_for_cluster(url) {
 
     return {
         title,
-        summary
+        summary,
+        thumbnails,
+        source
     }
 }
 

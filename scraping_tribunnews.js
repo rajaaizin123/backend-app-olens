@@ -199,6 +199,30 @@ async function scraping_tribunnews_for_cluster(url) {
 
     const content = [];
 
+    let thumbnails =
+        $("#artimg img.imgfull").attr("src") ||
+
+        $("img.imgfull").first().attr("src") ||
+
+        "";
+
+    if (!thumbnails) {
+
+        const html = $("#artimg").html() || "";
+
+        const match = html.match(/youtube\.com\/watch\?v=([a-zA-Z0-9_-]+)/);
+
+        if (match && match[1]) {
+
+            const videoId = match[1];
+
+            thumbnails =
+                `https://img.youtube.com/vi/${videoId}/hqdefault.jpg`;
+        }
+    }
+
+    const source = "tribun";
+
     // ambil semua paragraph + blockquote
     article.find("p, blockquote li").each((_, el) => {
 
@@ -238,6 +262,8 @@ async function scraping_tribunnews_for_cluster(url) {
     return {
         title,
         summary,
+        thumbnails,
+        source
     };
 }
 
