@@ -9,7 +9,7 @@ const { scraping_tribunnews, scraping_tribunnews_for_cluster } = require("./scra
 const { scraping_kompas, scraping_kompas_for_cluster } = require("./scraping_kompas");
 const { get_headlineNews_detik, get_PopularNews, get_latestNews_tribun, get_latestNews_kompas, get_latestNews_tempo, get_latestNews_detik } = require("./get_headline_news");
 const { getAllLinkMedia_for_cluster, getDecodedLinks } = require('./scraping_raw_cluster');
-const { AppErrorCodes } = require("firebase-admin/app");
+//const { AppErrorCodes } = require("firebase-admin/app");
 
 const app = express();
 
