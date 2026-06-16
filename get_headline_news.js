@@ -50,12 +50,30 @@ async function get_headlineNews_detik() {
 
     const source = "detik";
 
+    // untuk ambil komentar terbanyak detik
+    const komentarTerbanyak = $(".cb-commented .list-content__item")
+        .first();
+
+    const komentarTitle = komentarTerbanyak
+        .find(".media__link")
+        .text()
+        .trim();
+
+    const komentarLink = komentarTerbanyak
+        .find(".media__link")
+        .attr("href");
+
     return {
         title,
         pubDate,
         image,
         link,
-        source
+        source,
+
+        komentarTerbanyak: {
+            title: komentarTitle,
+            link: komentarLink,
+        }
     }
 }
 

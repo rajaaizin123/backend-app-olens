@@ -33,11 +33,12 @@ async function scraping_detik(url) {
     article.find("table").remove();
     article.find(".detail__body-tag").remove();
     article.find(".clearfix").remove();
+    article.find(".ads-scrollpage-container");
 
     const content = [];
     const source = "Detik";
 
-    article.contents().each((_, el) => {
+    article.find("p").each((_, el) => {
         let text = $(el).text().trim();
 
         if (!text) return;
@@ -46,7 +47,8 @@ async function scraping_detik(url) {
         if (
             text.includes("Baca juga") ||
             text.includes("Lihat juga Video") ||
-            text.includes("Baca berita selengkapnya")
+            text.includes("Baca berita selengkapnya") ||
+            text.includes("SCROLL TO CONTINUE WITH CONTENT")
         ) {
             return;
         }

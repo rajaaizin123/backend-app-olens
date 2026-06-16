@@ -9,6 +9,9 @@ const { scraping_tribunnews, scraping_tribunnews_for_cluster } = require("./scra
 const { scraping_kompas, scraping_kompas_for_cluster } = require("./scraping_kompas");
 const { get_headlineNews_detik, get_PopularNews, get_latestNews_tribun, get_latestNews_kompas, get_latestNews_tempo, get_latestNews_detik } = require("./get_headline_news");
 const { getAllLinkMedia_for_cluster, getDecodedLinks } = require('./scraping_raw_cluster');
+const { get_popular_page_kompas } = require("./popular_news");
+const { upload, uploadProfile } = require('./setting_profile');
+require('dotenv').config();
 //const { AppErrorCodes } = require("firebase-admin/app");
 
 const app = express();
@@ -97,6 +100,21 @@ app.get("/homepage", async (req, res) => {
             data_latestNews_detik
         },
     });
+});
+
+// popular news
+app.get("/popular_news_page", async (req, res) => {
+    console.log('ada requst masuk untuk: /popular_news_page');
+    try {
+        const result = await get_popular_page_kompas();
+
+        res.json(result);
+    } catch (error) {
+        res.status(500).json({
+            success: false,
+            message: error.message,
+        });
+    }
 });
 
 // endpoint
@@ -432,6 +450,9 @@ app.get("/kompas_summary_for_cluster", async (req, res) => {
         });
     }
 });
+
+// edit foto profil
+app.post('/upload-profile', upload.single('file'), uploadProfile);
 
 
 // server
