@@ -9,11 +9,13 @@ cloudinary.config({
     api_secret: process.env.CLOUDINARY_API_SECRET,
 });
 
+const serviceAccount = JSON.parse(
+    process.env.FIREBASE_SERVICE_ACCOUNT
+);
+
 if (!admin.apps.length) {
     admin.initializeApp({
-        credential: admin.credential.cert(
-            require('./servicesAccountKey.json'),
-        ),
+        credential: admin.credential.cert(serviceAccount)
     });
 }
 
