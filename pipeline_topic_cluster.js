@@ -25,7 +25,7 @@ const BATCH_SIZE = parseInt(process.env.BATCH_SIZE || "100");
 // =====================
 async function fetchArticles() {
     const snapshot = await db
-        .collection("artikel_berita_3")
+        .collection("artikel_berita_2")
         .limit(BATCH_SIZE)
         .get();
 
@@ -68,7 +68,7 @@ async function saveTopics(result) {
     const topics = result.topics || [];
 
     topics.forEach(topic => {
-        const ref = db.collection("cluster_topics_3").doc();
+        const ref = db.collection("cluster_topics_4").doc();
 
         batch.set(ref, {
             topic_id: topic.topic_id,

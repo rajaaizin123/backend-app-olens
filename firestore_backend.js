@@ -18,7 +18,7 @@ async function store_data(data) {
     }
 
     const batch = db.batch();
-    const collectionRef = db.collection('artikel_berita_3');
+    const collectionRef = db.collection('artikel_berita_2');
 
     data.forEach(item => {
         const docRef = collectionRef.doc();
@@ -1948,4 +1948,706 @@ const dataBerita3 = [
     }
 ];
 
-store_data(dataBerita3);
+const dataBerita4 = [
+    {
+        "title": "Naik Kelas ke Moto3 Junior, Ramadhipa Beberkan Perubahan Musim Ini",
+        "summary": "JAKARTA, KOMPAS.com - Pebalap muda Indonesia, Muhammad Kiandra Ramadhipa, terus menunjukkan grafik peningkatan performa yang positif dalam karier balap internasionalnya di Eropa. Setelah musim lalu bersaing di ajang European Talent Cup (ETC), tahun ini ia naik kelas ke ajang Moto3 Junior World Championship. Bukan tanpa prestasi, Ramadhipa berhasil mengumpulkan tiga kali podium dan meraih dua kemenangan, di Magny-Course dan Catalan. Dia duduk di posisi kelima klasemen dengan 129 poin.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/ruL-O7nNiYiyKZPCV8C_kQt6Ndc=/208x72:1072x648/1200x800/data/photo/2025/11/02/6907599618052.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/164100415/naik-kelas-ke-moto3-junior-ramadhipa-beberkan-perubahan-musim-ini"
+    },
+    {
+        "title": "Minum Vitamin Jangan Asal, Ini Waktu Terbaiknya Menurut Ahli",
+        "summary": "KOMPAS.com - Konsumsi suplemen vitamin sudah menjadi bagian dari gaya hidup banyak orang. Jenis suplemen yang populer antara lain vitamin C, vitamin D, magnesium, hingga omega-3. Untuk mendapatkan hasil maksimal, selain mengonsumsi secara rutin, cara mengonsumsinya, termasuk waktu minum dan kombinasi dengan makanan tertentu, dapat memengaruhi seberapa baik tubuh menyerap manfaatnya. Dikutip dari Harper's Bazaar, dokter naturopati kesehatan perempuan integratif Saru Bala mengatakan bahwa waktu mengonsumsi suplemen memang berperan penting.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/M4Apy0BxOHT5jM21N_PAvdGECUk=/0x0:5760x3840/1200x800/data/photo/2026/06/17/6a3232d4796dc.jpg",
+        "link": "https://lifestyle.kompas.com/read/2026/06/17/163100220/minum-vitamin-jangan-asal-ini-waktu-terbaiknya-menurut-ahli"
+    },
+    {
+        "title": "PBVSI Lepas Timnas Voli Putra dan Putri U18, Target Tembus Semifinal AVC",
+        "summary": "KOMPAS.com - Pengurus Pusat Persatuan Bola Voli Seluruh Indonesia (PP PBVSI) secara resmi melepas Timnas Voli Putra Indonesia dan Timnas Voli Putri U18 Indonesia untuk mengikuti tiga kejuaraan internasional. Prosesi pelepasan dipimpin langsung oleh Ketua Umum PP PBVSI, Imam Sudjarwo yang digelar di Padepokan Voli Jenderal Polisi Kunarto, Sentul, Jawa Barat, Rabu (17/6/2026). Timnas Voli Putra Indonesia dijadwalkan mengikuti turnamen AVC Men's Volleyball Cup 2026 di Ahmedabad, India, pada 20-28 Juni 2026.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/gnzCxS_8w4DopEg0Jacw1BHbMgs=/228x0:3672x2296/1200x800/data/photo/2026/06/17/6a324d53caab2.jpg",
+        "link": "https://www.kompas.com/sports/read/2026/06/17/16220268/pbvsi-lepas-timnas-voli-putra-dan-putri-u18-target-tembus-semifinal-avc"
+    },
+    {
+        "title": "Fenomena \"Frugal Living\" dan Kelas Menengah Tertekan",
+        "summary": "SAAT ini terjadi banyak perubahan perilaku konsumen. Apabila beberapa tahun lalu restoran selalu penuh pada akhir pekan dan gerai ritel ramai oleh pembeli yang membawa banyak kantong belanja, kini suasananya berbeda. Pengunjung masih datang, tetapi lebih banyak yang sekadar melihat-lihat, membandingkan harga, atau berburu diskon.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/y8jWQFHMrNjz7KsVbekSaZOJ5-4=/0x0:780x520/1200x800/data/photo/2020/04/30/5eaa6c48211e1.jpg",
+        "link": "https://money.kompas.com/read/2026/06/17/115800626/fenomena-frugal-living-dan-kelas-menengah-tertekan"
+    },
+    {
+        "title": "Hattrick, Messi Cuma Butuh 1 Gol Lagi Jadi Top Skor Sepanjang Masa Piala Dunia",
+        "summary": "KOMPAS.com - Lionel Messi semakin mendekati satu lagi pencapaian bersejarah di panggung Piala Dunia. Kapten Argentina itu mencetak hattrick saat membawa timnya menang meyakinkan atas Aljazair pada laga perdana Grup J Piala Dunia 2026 pada Rabu (17/6/2026) pagi ini. Tiga gol yang dibukukan Messi membuat koleksi golnya di putaran final Piala Dunia kini mencapai 16 gol, menyamai rekor milik legenda Jerman, Miroslav Klose.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/l-FpE6lkWgOSOxAs2NKaH7kHKDM=/0x0:1200x800/1200x800/data/photo/2026/06/17/6a31fc6457feb.jpeg",
+        "link": "https://bola.kompas.com/read/2026/06/17/10012678/hattrick-messi-cuma-butuh-1-gol-lagi-jadi-top-skor-sepanjang-masa-piala-dunia?page=all"
+    },
+    {
+        "title": "Besok MSCI Putuskan Nasib Pasar Modal Indonesia, Tetap Emerging Market atau Turun Kelas?",
+        "summary": "JAKARTA, KOMPAS.com - Keputusan Morgan Stanley Capital International (MSCI) yang akan diumumkan pada 18 Juni 2026 menjadi salah satu momen paling penting bagi pasar modal Indonesia dalam beberapa tahun terakhir. MSCI akan menentukan apakah Indonesia tetap bertahan dalam kelompok pasar berkembang (emerging market) atau justru mengalami penurunan status menjadi pasar frontier (frontier market). Dikutip dari Bloomberg, Selasa malam (16/6/2026), Indonesia berisiko kehilangan  dana asing hingga 13 miliar dollar AS atau sekitar Rp 230,2 triliun (kurs Rp 17.725 per dollar AS), apabila MSCI memutuskan menurunkan status pasar saham Indonesia dari emerging market menjadi frontier market.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/56ddnqXFpbZGPFWlYP3-g4Z1tc4=/871x678:4286x2954/1200x800/data/photo/2026/06/09/6a273f35b45fb.jpg",
+        "link": "https://money.kompas.com/read/2026/06/17/094100626/besok-msci-putuskan-nasib-pasar-modal-indonesia-tetap-emerging-market-atau?page=all"
+    },
+    {
+        "title": "Ada 5 Demo di Jakarta, Simak Jalur Alternatif Bundaran HI hingga DPR",
+        "summary": "JAKARTA, KOMPAS.com - Pengguna jalan yang beraktivitas di Jakarta Pusat perlu mengatur ulang rute perjalanan pada Rabu (17/6/2026). Pasalnya, terdapat lima aksi demonstrasi yang dijadwalkan berlangsung di sejumlah titik strategis dan berpotensi memicu kepadatan lalu lintas. Kasi Humas Polres Metro Jakarta Pusat Iptu Erlyn Sumantri mengatakan, aksi pertama digelar oleh Aliansi Masyarakat Jakarta Timur di Jalan Medan Merdeka Selatan atau sisi selatan Monas pada pukul 10.00 WIB.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/dQOHwH4YMI1tgjQMa32nNgwdphQ=/0x0:1280x853/1200x800/data/photo/2025/08/28/68aff32220c26.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/101128815/ada-5-demo-di-jakarta-simak-jalur-alternatif-bundaran-hi-hingga-dpr"
+    },
+    {
+        "title": "Solar Langka, Sumatera Menunggu Keseriusan Negara",
+        "summary": "PULAU Sumatera kembali menghadapi persoalan yang sesungguhnya tidak boleh terjadi di wilayah yang menjadi salah satu tulang punggung ekonomi nasional. Dalam beberapa pekan terakhir, antrean panjang kendaraan di berbagai SPBU menjadi pemandangan yang lazim. Truk pengangkut hasil perkebunan, bus antarkota, kendaraan logistik, hingga masyarakat pengguna kendaraan diesel harus menunggu berjam-jam hanya untuk mendapatkan solar.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/1DYh5LX_CML4EkKG79Wf2Ei_LUA=/446x0:4754x2872/1200x800/data/photo/2026/06/17/6a31ca0ebb87d.jpg",
+        "link": "https://money.kompas.com/read/2026/06/17/052500526/solar-langka-sumatera-menunggu-keseriusan-negara?page=all"
+    },
+    {
+        "title": "Suzuki Satria Pro Disebut Satria Jarjit, Konsumen Pilih Tipe Standar",
+        "summary": "JAKARTA, KOMPAS.com – Kehadiran Suzuki Satria Pro pada akhir 2025 lalu, sempat mencuri perhatian pecinta motor bebek sport. Sebagai varian tertinggi dari keluarga Satria F150, model ini hadir dengan berbagai teknologi baru seperti keyless, rem ABS, Suzuki Ride Connect, hingga port USB. Namun, tingginya fitur yang ditawarkan ternyata belum mampu menggeser dominasi Satria standar di pasar. Konsumen justru masih lebih banyak memilih model lama yang desainnya sudah akrab di mata penggemar motor ayam jago.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/XNlX72JqNzGyKu2t_sXssFX3Ep4=/0x117:1600x1184/1200x800/data/photo/2026/05/18/6a0abff3390f2.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/160100815/suzuki-satria-pro-disebut-satria-jarjit-konsumen-pilih-tipe-standar"
+    },
+    {
+        "title": "Omoway Debut Omo-X di Indonesia: Motor Listrik Investasi Rp 179 M",
+        "summary": "JAKARTA, KOMPAS.com – Omoway resmi melakukan debut pertamanya di Indonesia dengan membawa motor listrik pintar Omo-X. Indonesia menjadi pasar pertama yang dipilih perusahaan untuk memperkenalkan sekaligus mulai mendistribusikan produk tersebut kepada konsumen. Omoway juga mengungkap bahwa proses riset dan pengembangan Omo-X membutuhkan investasi besar.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/tDlT4aqPqNNo6lWeIpvkG_jKf-8=/513x228:3281x2073/1200x800/data/photo/2026/06/15/6a2fc526d234f.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/084200015/omoway-debut-omo-x-di-indonesia--motor-listrik-investasi-rp-179-m"
+    },
+    {
+        "title": "Menggerakkan Nilai Tambah Ekonomi Daerah",
+        "summary": "BEBERAPA hari terakhir, perhatian publik tertuju pada penyelenggaraan Bali Jagadhita VII 2026. Acara yang mempertemukan perdagangan, pariwisata, dan investasi tersebut berhasil mencatat potensi transaksi dan ekspor sekitar Rp 30 miliar serta potensi kesepakatan bisnis pariwisata mencapai Rp 6,9 triliun. Yang menarik bukan sekadar angkanya, melainkan pesan yang dikandungnya: daerah yang mampu mengolah potensinya menjadi nilai tambah akan menjadi pusat pertumbuhan ekonomi baru.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/LWxSrKENeFYoM2uinZmk0i_wmf4=/0x0:918x612/1200x800/data/photo/2023/08/06/64cf2df801797.png",
+        "link": "https://money.kompas.com/read/2026/06/17/132800926/menggerakkan-nilai-tambah-ekonomi-daerah"
+    },
+    {
+        "title": "Cek Kesehatan Lebih Mudah, Prodia Hadirkan Fitur Pembayaran Digital",
+        "summary": "JAKARTA, KOMPAS.com - PT Prodia Digital Indonesia (PRDI), anak usaha PT Prodia Widyahusada Tbk (PRDA), resmi meluncurkan fitur pembayaran digital U-aang powered by blu sebagai metode pembayaran baru di aplikasi U by Prodia, Rabu (17/6/2026). Fitur U-aang diharapkan dapat mempermudah pengguna saat melakukan pembayaran untuk berbagai layanan kesehatan yang tersedia di aplikasi U by Prodia. Aksi korporasi itu melibatkan blu by BCA Digital sebagai exclusive bank partner melalui layanan Bank-as-a-Service (BaaS) dalam pengembangan metode pembayaran yang terintegrasi langsung dengan rekening blu di dalam aplikasi U by Prodia.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/AH775qivXOgVFMcOtc3-uL2dZEQ=/70x101:756x558/1200x800/data/photo/2024/04/24/662932fdd0010.png",
+        "link": "https://money.kompas.com/read/2026/06/17/155103626/cek-kesehatan-lebih-mudah-prodia-hadirkan-fitur-pembayaran-digital"
+    },
+    {
+        "title": "Komparasi Kawasaki Brusky 125 dan Suzuki Burgman Street 125 EX",
+        "summary": "JAKARTA, KOMPAS.com – Pasar skutik 125 cc di Indonesia semakin ramai dengan kehadiran Kawasaki Brusky 125, yang baru saja meluncur di Jakarta Fair 2026. Motor matik pertama Kawasaki yang dijual di Tanah Air ini langsung masuk ke segmen yang selama ini dihuni berbagai model populer, salah satunya Suzuki Burgman Street 125 EX. Menariknya, kedua motor ini dijual dengan harga yang hampir sama. Kawasaki Brusky 125 dibanderol Rp 26,5 juta OTR Jakarta, sementara Suzuki Burgman Street 125 EX dijual mulai Rp 26.443.500 OTR Jabodetabek.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/Qh34E2gRgozjg5Q3o0FOyLZG2EU=/0x0:1536x1024/1200x800/data/photo/2026/06/17/6a3245e58f2d0.png",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/150100015/komparasi-kawasaki-brusky-125-dan-suzuki-burgman-street-125-ex"
+    },
+    {
+        "title": "Veda Ega Pratama Dapat Hadiah Mobil Honda Civic RS",
+        "summary": "JAKARTA, KOMPAS.com - Pebalap Honda Team Asia, Veda Ega Pratama, mendapat hadiah mobil Honda Civic RS Hybrid karena berhasil meraih podium 3 di Moto3 Brasil. Seperti diketahui, Veda finis di posisi ketiga dalam ajang Estrella Galicia 0,0 Grand Prix of Brazil pada 22 Maret 2026. Hadiah tersebut diberikan oleh Putra Rizky Bustaman, atau dikenal sebagai H Putra, sosok pegiat otomotif Tanah Air, sekaligus pemilik tim balap LFN HP969.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/4ZlZ4XIYQ6oNqGhA8DQYjYy9zsM=/0x10:1280x863/1200x800/data/photo/2026/06/09/6a27c7ed0cb88.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/152100515/veda-ega-pratama-dapat-hadiah-mobil-honda-civic-rs"
+    },
+    {
+        "title": "Menjaga Asa Hunian Layak Rakyat Kecil di Tengah Tekanan Ekonomi",
+        "summary": "DI TENGAH berbagai tantangan ekonomi yang dihadapi masyarakat saat ini, mulai dari kenaikan biaya hidup, tekanan daya beli, hingga terbatasnya akses permodalan usaha bagi masyarakat berpenghasilan rendah, program bantuan pemerintah dituntut tidak hanya bersifat konsumtif, tetapi juga mampu menciptakan dampak ekonomi berkelanjutan. Dalam konteks tersebut, Program Bantuan Stimulan Perumahan Swadaya (BSPS) atau yang lebih dikenal sebagai program bedah rumah, memiliki peran yang jauh lebih besar daripada sekadar memperbaiki rumah tidak layak huni. Selama ini, banyak pihak memandang BSPS sebagai program sosial yang bertujuan membantu masyarakat memperoleh hunian lebih layak. Pandangan tersebut tidak salah, tetapi belum sepenuhnya menggambarkan manfaat program ini.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/DKB0H7NcUQFUKbJ0LtmpIP2rfwo=/0x0:0x0/1200x800/data/photo/2026/02/19/6996b29cbc998.jpg",
+        "link": "https://money.kompas.com/read/2026/06/17/162000326/menjaga-asa-hunian-layak-rakyat-kecil-di-tengah-tekanan-ekonomi"
+    },
+    {
+        "title": "APJII: Mobile Legends Jadi Game Online yang Paling Sering Dimainkan Orang Indonesia",
+        "summary": "KOMPAS.com - Game buatan Moonton, Mobile Legends Bang-Bang (MLBB) menjadi game online yang paling sering dimainkan masyarakat Indonesia sepanjang 2026 ini. Hal tersebut diungkap dalam laporan \"Survei Penetrasi Internet dan Perilaku Pengguna Internet Indonesia 2026\" yang dirilis Asosiasi Penyelenggara Jasa Internet Indonesia (APJII) baru-baru ini. Dalam survei itu, disebutkan sebanyak 40,5 persen responden yang bermain game online, mengaku paling sering mengakses game bergenre multiplayer online battle arena (MOBA) tersebut.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/bH9Tfn6tR04IkhiuOjk3gO5X8-8=/78x0:1351x848/1200x800/data/photo/2025/09/19/68cd185d12724.jpg",
+        "link": "https://tekno.kompas.com/read/2026/06/17/15060027/apjii--mobile-legends-jadi-game-online-yang-paling-sering-dimainkan-orang"
+    },
+    {
+        "title": "Tes Motor MotoGP 2027 Dimulai, Ducati Andalkan Marc Marquez",
+        "summary": "JAKARTA, KOMPAS.com - Ducati dipastikan menurunkan Marc Marquez dan Fermin Aldeguer pada tes motor MotoGP 850cc yang akan berlangsung di Sirkuit Brno, Senin (22/6/2026). Tes tertutup tersebut menjadi kesempatan pertama bagi pebalap MotoGP menjajal motor generasi baru yang akan digunakan mulai musim 2027. Regulasi anyar menghadirkan sejumlah perubahan, mulai dari kapasitas mesin yang dipangkas menjadi 850cc, penghapusan ride-height device, aerodinamika yang lebih sederhana, hingga penggunaan ban Pirelli.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/XiehRC41tZk9yy7MSdLdjK3WYUk=/0x0:1121x747/1200x800/data/photo/2026/06/07/6a256df813a79.jpg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/144100515/tes-motor-motogp-2027-dimulai-ducati-andalkan-marc-marquez"
+    },
+    {
+        "title": "Utang Luar Negeri Indonesia untuk Apa Saja? Ternyata Mengalir ke Sektor Ini",
+        "summary": "JAKARTA, KOMPAS.com – Utang luar negeri (ULN) Indonesia terus bertambah. Per April 2026, posisi utang luar negeri Indonesia mencapai 439,8 miliar dollar Amerika Serikat (AS). Dengan asumsi kurs Rp 17.700 per dollar AS, posisi ULN Indonesia bertambah sekitar Rp 113 triliun, dari sekitar Rp 7.671 triliun pada kuartal I 2026 menjadi sekitar Rp 7.784 triliun pada April 2026. Namun, di balik angka yang kerap memunculkan kekhawatiran itu, ada pertanyaan yang tak kalah penting: untuk apa sebenarnya utang tersebut digunakan?",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/cYIQohhCG2wH8n6DDfo2OvG8hyo=/163x56:837x506/1200x800/data/photo/2023/10/03/651ba59d1c78e.jpg",
+        "link": "https://money.kompas.com/read/2026/06/17/154013726/utang-luar-negeri-indonesia-untuk-apa-saja-ternyata-mengalir-ke-sektor-ini"
+    },
+    {
+        "title": "Viral Penjambretan dengan Modus AC Mati, Ini Tips Aman untuk Penumpang",
+        "summary": "JAKARTA, KOMPAS.com - Membuka kaca jendela saat berkendara kerap menjadi pilihan ketika AC mobil bermasalah atau tidak berfungsi optimal. Namun, kebiasaan tersebut sebaiknya dilakukan dengan hati-hati, terutama saat melintas di jalan perkotaan yang padat dan sering terjadi perlambatan lalu lintas. Pasalnya, kondisi kaca terbuka dapat dimanfaatkan pelaku kejahatan untuk melancarkan aksinya. Mulai dari penjambretan, pencurian barang berharga, hingga modus kejahatan jalanan lainnya yang menyasar pengemudi maupun penumpang. Belum lama ini, viral di media sosial diramaikan dengan dugaan aksi penjambretan yang terjadi di kawasan Senayan, Jakarta Selatan. Korban disebut menjadi sasaran setelah kaca mobil terbuka karena AC kendaraan diklaim tidak berfungsi.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/8oqiiYfJFETgCKgm2icPDtJksd8=/0x0:0x0/1200x800/data/photo/2026/06/16/6a310de85abab.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/140100415/viral-penjambretan-dengan-modus-ac-mati-ini-tips-aman-untuk-penumpang"
+    },
+    {
+        "title": "Niat Menabung Naik, Tapi Isi Dompet Belum Mengikuti",
+        "summary": "JAKARTA, KOMPAS.com – Keinginan masyarakat Indonesia untuk menabung mulai menguat pada Mei 2026. Semakin banyak konsumen yang merasa saat ini merupakan waktu yang tepat untuk menyisihkan pendapatan dan mempersiapkan kondisi keuangan pada masa mendatang. Namun, semangat tersebut belum sepenuhnya diikuti oleh kemampuan finansial rumah tangga. Di tengah berbagai kebutuhan pengeluaran, terutama untuk pendidikan dan kebutuhan sehari-hari, kemampuan masyarakat untuk menyisihkan uang masih tertahan.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/h4uQ1vN_kKAiQkCWvXw7SmW8mEg=/102x0:687x390/1200x800/data/photo/2016/10/02/08401674-Cara-Jitu-Mulai-Menabung-Setelah-Kerja-Tanpa-Punya-Tabungan780x390.jpg",
+        "link": "https://money.kompas.com/read/2026/06/17/161600526/niat-menabung-naik-tapi-isi-dompet-belum-mengikuti"
+    },
+    {
+        "title": "Bisa Juara di Estoril, Ini Rahasia Fisik Prima Ramadhipa",
+        "summary": "JAKARTA, KOMPAS.com - Kejuaraan balap motor tingkat dunia seperti Moto3 Junior World Championship tidak hanya menguji kelihaian pebalap dalam memutar selongsong gas. Lebih dari itu, kompetisi kasta ini menuntut ketahanan fisik yang luar biasa karena persaingan yang sangat intens dan menguras energi sepanjang jalannya balapan. Pebalap muda binaan PT Astra Honda Motor (AHM), Muhammad Kiandra Ramadhipa, mengakui bahwa performa kompetitifnya di Sirkuit Estoril sangat ditopang oleh kesiapan fisiknya yang prima.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/0hl_0ii_pf24znhGlpuPUJGQaMo=/0x0:2733x1822/1200x800/data/photo/2026/06/15/6a2fc07f214fc.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/142100415/bisa-juara-di-estoril-ini-rahasia-fisik-prima-ramadhipa"
+    },
+    {
+        "title": "Zero ODOL 2027, Pelanggaran Truk Masih Didominasi Muatan dan Dokumen",
+        "summary": "JAKARTA, KOMPAS.com - Terhitung sejak Januari hingga 12 Juni 2026, sebanyak 939.322 kendaraan angkutan barang atau 75,64 persen tidak melakukan pelanggaran. Sementara itu, 302.561 unit atau 24,36 persen diketahui melakukan pelanggaran. Direktur Jenderal Perhubungan Darat Aan Suhanan mengatakan, jumlah tersebut berdasarkan data pengawasan yang dilakukan pada 89 Unit Pelaksanaan Penimbangan Kendaraan Bermotor (UPPKB). \"Kami melakukan pengawasan di 89 UPPKB yang tersebar di Indonesia. Dari Januari hingga 12 Juni 2026, sudah sebanyak 1.241.883 kendaraan yang tercatat dalam pengawasan,\" kata Aan dalam keterangan resminya, Senin (15/6/2026).",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/vNIjY-fJrcYhjuYGDeX6OynPOoE=/95x0:1161x711/1200x800/data/photo/2026/06/17/6a3230611269a.jpeg",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/133100415/zero-odol-2027-pelanggaran-truk-masih-didominasi-muatan-dan-dokumen"
+    },
+    {
+        "title": "China Terapkan Standar Keselamatan Baru Mobil Listrik Mulai Juli 2026",
+        "summary": "JAKARTA, KOMPAS.com – Pemerintah China akan mulai menerapkan dua standar nasional wajib baru untuk kendaraan energi baru atau New Energy Vehicle (NEV) mulai 1 Juli 2026. Kebijakan ini menjadi langkah lanjutan untuk meningkatkan aspek keselamatan kendaraan listrik yang jumlahnya terus bertambah di negara tersebut. Dua aturan yang mulai berlaku adalah Safety Requirements for Electric Vehicles (GB18384—2025) atau Persyaratan Keselamatan untuk Kendaraan Listrik.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/spp0ArKUBw92NZyQ1cy0mgsRAvY=/0x0:1536x1024/1200x800/data/photo/2026/03/06/69aa792be1de2.png",
+        "link": "https://otomotif.kompas.com/read/2026/06/17/112200915/china-terapkan-standar-keselamatan-baru-mobil-listrik-mulai-juli-2026"
+    },
+    {
+        "title": "Pendataan Sensus Ekonomi 2026 Resmi Dimulai, Wakil Kepala BPS RI Canangkan di Sultra dan Sumut",
+        "summary": "KOMPAS.com - Badan Pusat Statistik (BPS) resmi memulai pendataan lapangan Sensus Ekonomi 2026 (SE2026) secara serentak di seluruh Indonesia. Dimulainya pendataan tersebut ditandai dengan pencanangan SE2026 di Sulawesi Tenggara (Sultra) dan Sumatera Utara (Sumut). Wakil Kepala BPS RI Sonny Harry Budiutomo Harmadi mencanangkan pelaksanaan SE2026 di Lapangan Kantor Gubernur Sultra, Kendari, Senin (15/6/2026).",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/0gAAPpQ8gJq0psSngtwrVlreDLs=/0x0:1248x832/1200x800/data/photo/2026/06/17/6a324884868c1.png",
+        "link": "https://money.kompas.com/read/2026/06/17/141837626/pendataan-sensus-ekonomi-2026-resmi-dimulai-wakil-kepala-bps-ri-canangkan-di"
+    },
+    {
+        "title": "LPS: Kemauan Menabung Masyarakat Meningkat pada Mei 2026",
+        "summary": "JAKARTA, KOMPAS.com - Lembaga Penjamin Simpanan (LPS) mencatat Indeks Menabung Konsumen (IMK) pada Mei 2026 mengalami kenaikan dibandingkan bulan sebelumnya. Meski tipis, kenaikan tersebut menunjukkan adanya peningkatan niat masyarakat untuk menabung di tengah kemampuan menabung yang masih tertahan. Hasil Survei Konsumen dan Perekonomian (SKP) LPS menunjukkan IMK pada Mei 2026 berada di level 80,2, naik 0,5 poin dibandingkan April 2026 yang tercatat sebesar 79,7.",
+        "source": "kompas",
+        "thumbnails": "https://asset.kompas.com/crops/tbglRcSTBYiC3Ie-wZ0gWSlfjt0=/0x0:780x520/1200x800/data/photo/2024/05/13/66419255b7c10.jpg",
+        "link": "https://money.kompas.com/read/2026/06/17/142933126/lps-kemauan-menabung-masyarakat-meningkat-pada-mei-2026"
+    },
+    {
+        "title": "Polres Malang Resmikan Ruang Pemeriksaan Digital dengan Sistem Perekam Audio Visual",
+        "summary": "Detiknews.id Malang – Polres Malang Polda Jatim meresmikan ruang pemeriksaan digital “Prawira Hirya” yang dilengkapi sistem perekaman audio visual untuk mendukung proses penyidikan yang lebih profesional, transparan, dan akuntabel. Peresmian dilakukan langsung oleh Kapolres Malang AKBP Muhammad Taat Resdi pada Jum’at (12/06) tersebut, menjadi fasilitas baru Satreskrim Polres Malang mendokumentasikan proses pemeriksaan saksi maupun tersangka secara utuh melalui rekaman suara dan gambar. Kapolres Malang AKBP Muhammad Taat Resdi mengatakan, keberadaan ruang pemeriksaan digital diharapkan mampu memperkuat pembuktian dalam proses penegakan hukum.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/06/IMG-20260617-WA0004.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/polres-malang-resmikan-ruang-pemeriksaan-digital-dengan-sistem-perekam-audio-visual/"
+    },
+    {
+        "title": "Playon Bersama Masyarakat, Polres Magetan Sambut Hari Bhayangkara ke-80",
+        "summary": "Detiknews.id Magetan – Mengusung tema “Playon Bersama Masyarakat Magetan”, event olahraga dalam rangka memperingati Hari Bhayangkara ke-80 Tahun 2026 yang digelar Polres Magetan Polda Jatim bekerja sama dengan Komunitas Playon Magetan berhasil menarik antusiasme masyarakat. Kegiatan yang berlangsung pada Minggu (14/06) pagi dengan start dan finish di depan Pendopo Surya Graha, Alun-Alun Kabupaten Magetan itu diikuti sekitar 1.800 pelari yang datang dari berbagai daerah di Jawa Timur maupun luar daerah. Hadir dalam kegiatan tersebut Bupati Magetan Hj. Nanik Endang Rusminiarti, M.Pd., Wakil Bupati Magetan Suyatni Priasmoro, Kapolres Magetan AKBP Dr. Raden Erik Bangun Prakasa, S.H., S.I.K., M.M., unsur Forkopimda, kepala OPD, komunitas lari, serta masyarakat umum.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/06/IMG-20260617-WA0005.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/playon-bersama-masyarakat-polres-magetan-sambut-hari-bhayangkara-ke-80/"
+    },
+    {
+        "title": "Satreskrim Polres Trenggalek Tangkap Tersangka Jambret, Lima Kali Masuk Penjara",
+        "summary": "Detiknews.id Trenggalek – Seorang residivis di Kabupaten Trenggalek kembali berurusan dengan pihak kepolisian. Pemuda berusia 28 tahun ini ditangkap jajaran Polres Trenggalek Polda Jatim setelah melakukan tindak pidana pencurian disertai kekerasan di sejumlah tempat. Kapolres Trenggalek AKBP Ridwan Maliki mengungkapkan tersangka BF diketahui telah melakukan tindak pidana pencurian disertai kekerasan di tiga lokasi yang berbeda.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/06/IMG-20260617-WA0003.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/satreskrim-polres-trenggalek-tangkap-tersangka-jambret-lima-kali-masuk-penjara/"
+    },
+    {
+        "title": "Rangkuman Lengkap Tabrakan Kereta di Bekasi yang Tewaskan 14 Orang",
+        "summary": "Daftar Isi\n\t\n\t\t\n\t\t\t            \t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tKronologi Kejadian: Dipicu Insiden di Perlintasan Sebidang\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tInsiden di JPL 85\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tKRL Berhenti di Lintasan\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tBenturan dari Arah Belakang\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tDampak Tabrakan\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tKesaksian Penumpang: Kepanikan Saat Listrik Padam\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tPenumpang Terpental\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tSempat Tidak Sadar\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tEvakuasi Mandiri\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tEvakuasi dan Penanganan Korban\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tKendala Evakuasi\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tSeluruh Korban Meninggal Perempuan\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tPenanganan Medis\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tRespons Pemerintah: Investigasi hingga Rencana Perbaikan\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tSantunan Korban\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tPerbaikan Perlintasan\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tAnggaran Rp 4 Triliun\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tInvestigasi KNKT dan Dampak Perjalanan Kereta\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tPengumpulan Data\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tEvaluasi Operator Taksi\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tGangguan Operasional\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tPosko Informasi dan Layanan Korban\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tPosko Tanggap Darurat\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tLayanan Barang Temuan\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\tImbauan Kepolisian Aktivitas di Stasiun Bekasi Timur pada Senin malam, 27 April 2026, sempat terganggu setelah terjadi kecelakaan kereta api sekitar pukul 20.52 WIB. Insiden ini melibatkan KA Argo Bromo Anggrek dan KRL Commuter Line rute Jakarta-Cikarang. Data terbaru dari PT Kereta Api Indonesia (Persero) hingga Selasa (28/4/2026) pagi pukul 08.45 WIB, mencatat 14 orang meninggal dunia dan 84 orang mengalami luka-luka. Seluruh korban meninggal merupakan penumpang perempuan, karena titik benturan berada di gerbong khusus wanita yang terletak di bagian paling belakang rangkaian KRL.",
+        "thumbnails": "https://akcdn.detik.net.id/community/media/visual/2026/04/28/detik-detik-evakuasi-gerbong-krl-usai-tabrakan-maut-di-bekasi-timur-1777349376599_169.jpeg?w=700&q=90",
+        "source": "detik",
+        "link": "https://www.detik.com/jabar/berita/d-8464986/rangkuman-lengkap-tabrakan-kereta-di-bekasi-yang-tewaskan-14-orang"
+    },
+    {
+        "title": "Kapolres Situbondo Jalani Tes Urine, Komitmen Bersih Narkoba bersama PJU dan Kapolsek",
+        "summary": "Detiknews.id Situbondo – Polres Situbondo Polda Jatim menggelar tes urine mendadak terhadap Pejabat Utama (PJU) dan Kapolsek jajaran sebagai langkah mitigasi serta pengawasan internal untuk memastikan seluruh personel bebas dari penyalahgunaan narkoba, Kamis (11/06). Kegiatan yang berlangsung di Gedung Tantya Sudhirajati Polres Situbondo itu dilaksanakan oleh Sidokkes Polres Situbondo bersama Seksi Propam sebagai bentuk komitmen menjaga integritas dan profesionalisme anggota Polri. Kapolres Situbondo AKBP Bayu Anuwar Sidiqie turut menjalani tes urine bersama para pejabat utama dan Kapolsek jajaran sebagai bentuk keteladanan sekaligus menunjukkan bahwa pengawasan berlaku untuk seluruh personel tanpa terkecuali.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/06/IMG-20260617-WA0002.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/kapolres-situbondo-jalani-tes-urine-komitmen-bersih-narkoba-bersama-pju-dan-kapolsek/"
+    },
+    {
+        "title": "Tampang Cole Tomas Allen, Pelaku Penembakan di Acara Donald Trump",
+        "summary": "Insiden penembakan terjadi di sebuah acara yang dihadiri Presiden Amerika Serikat, Donald Trump. Pelaku berhasil diamankan aparat keamanan di lokasi kejadian. Dilaporkan CNN, sebagaimana dilansir dari detikNews Minggu (26/4/2026), pria bersenjata tersebut diidentifikasi sebagai Cole Tomas Allen (31), warga California. Peristiwa itu terjadi saat acara White House Correspondents Dinner yang digelar di Hilton Washington DC pada Sabtu (25/4) malam waktu setempat. Tembakan dilaporkan terdengar dari area luar ballroom utama tempat acara berlangsung.",
+        "thumbnails": "https://akcdn.detik.net.id/community/media/visual/2026/04/26/foto-penangkapan-cole-tomas-allen-yang-diunggah-trump-via-truth-social-1777175164082_169.jpeg?w=700&q=90",
+        "source": "detik",
+        "link": "https://www.detik.com/jabar/berita/d-8461936/tampang-cole-tomas-allen-pelaku-penembakan-di-acara-donald-trump"
+    },
+    {
+        "title": "Fenomena Langit Mei 2026, Dua Purnama hingga Hujan Meteor",
+        "summary": "Daftar Isi\n\t\n\t\t\n\t\t\t            \t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\n\t\t\t\t\t\t\tFenomena Astronomi Mei 2026\t\t\t\t\t\t\n\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t1. Flower Moon\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t2. Puncak Hujan Meteor Eta-Aquariid\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t3. Hujan Meteor Eta-Lyrid\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t4. Parade Konjungsi Planet\t\t\t\t\t\n\t\t\t\t\t\t\t\t            \t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t5. Blue Moon Kabar gembira buat para pencinta astronomi. Langit malam pada Mei 2026 akan menghadirkan sejumlah fenomena menarik yang sayang untuk dilewatkan. Mulai dari kemunculan dua kali bulan purnama dalam satu bulan, hingga hujan meteor yang bisa disaksikan dengan mata telanjang.",
+        "thumbnails": "https://akcdn.detik.net.id/community/media/visual/2026/05/03/ilustrasi-fenomena-astronomi-bulan-ini-1777789561274_169.png?w=700&q=90",
+        "source": "detik",
+        "link": "https://www.detik.com/jatim/berita/d-8472301/fenomena-langit-mei-2026-dua-purnama-hingga-hujan-meteor"
+    },
+    {
+        "title": "Baintelkam Polri Konsolidasikan Peran KBPP Jatim, Perkuat Sinergi Lawan Disinformasi",
+        "summary": "Detiknews.id Surabaya – Kunjungan Tim Baintelkam Polri ke Keluarga Besar Putra Putri Polri (KBPP Polri) Jawa Timur menegaskan langkah konkret Polri dalam memperkuat basis dukungan sosial di tengah meningkatnya dinamika informasi dan maraknya narasi negatif di ruang publik. Dalam pertemuan tersebut, Tim Baintelkam Polri diterima langsung oleh Erick R. Tahalele, S.Sos selaku Ketua III KBPP Polri Jawa Timur sekaligus Komisaris Gunawangsa Apartemen Group, Selasa (21/04). Pertemuan berlangsung produktif dengan fokus pada penguatan kolaborasi strategis antara Polri dan KBPP sebagai mitra yang memiliki kedekatan historis serta jaringan sosial yang luas di masyarakat.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/04/IMG-20260426-WA0017.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/baintelkam-polri-konsolidasikan-peran-kbpp-jatim-perkuat-sinergi-lawan-disinformasi/"
+    },
+    {
+        "title": "Dandim Pastikan Kanopi KDMP Bangkalan Kondusif, Kerusakan Diduga Akibat Cuaca",
+        "summary": "Detiknews.id Bangkalan – Telah terjadi kerusakan pada bagian kanopi atau atap spandex di teras depan bangunan KDKMP Desa Pangaleyan, Kecamatan Tanah Merah, Kabupaten Bangkalan, pada Senin (25/05) sekitar pukul 11.30 WIB. Kejadian tersebut benar adanya dan langsung ditangani oleh aparat kewilayahan bersama pemerintah desa guna memastikan situasi tetap aman dan kondusif. Informasi awal diperoleh dari warga sekitar bernama Udin yang melihat posisi kanopi mengalami pergeseran sebelum akhirnya jatuh di area teras bangunan. Menindaklanjuti laporan tersebut, Kepala Desa Pangaleyan, Zaiqulhak Alfarizi, segera berkoordinasi dengan Babinsa setempat, untuk melakukan pengecekan langsung di lokasi kejadian. Berdasarkan hasil pengecekan sementara di lapangan, kerusakan dipengaruhi oleh faktor cuaca berupa hujan dengan intensitas tinggi yang terjadi secara terus-menerus dalam beberapa waktu terakhir. Kondisi tersebut menyebabkan bagian dinding tempat dudukan baut dynabol menjadi lembab sehingga daya cengkram baut pengunci rangka kanopi menurun dan tidak mampu menopang beban secara maksimal.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260528-WA0005.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/dandim-pastikan-kanopi-kdmp-bangkalan-kondusif-kerusakan-diduga-akibat-cuaca/"
+    },
+    {
+        "title": "Upacara Hari Pancasila 2026, Kapolres Gresik Ajak Personel Bumikan Nilai Pancasila",
+        "summary": "Detiknews.id Gresik – Semangat kebangsaan mewarnai Apel di Mapolres Gresik pada peringatan Hari Lahir Pancasila Tahun 2026, Senin (01/06) pagi. Upacara yang dipimpin langsung Kapolres Gresik AKBP Ramadhan Nasution selaku Inspektur Upacara. Kegiatan yang digelar di Mapolres Gresik, Jalan Dr. Wahidin SHD No. 214, Kecamatan Kebomas, tersebut dihadiri Wakapolres Gresik Kompol Shabda Purusha, para Pejabat Utama (PJU), Kapolsek jajaran, serta personel Polres Gresik. Sebanyak 10 peleton pasukan gabungan turut ambil bagian dalam upacara, terdiri dari Deputasi Perwira, staf Polres, Polsek jajaran, Satlantas, Satpolair, Satsamapta, Satreskrim dan Satresnarkoba, Satintelkam, Polwan hingga ASN Polres Gresik.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/06/IMG-20260602-WA0002.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/upacara-hari-pancasila-2026-kapolres-gresik-ajak-personel-bumikan-nilai-pancasila/"
+    },
+    {
+        "title": "Polres Probolinggo Tingkatkan Pengamanan Obyek Wisata saat Libur Panjang",
+        "summary": "Detiknews.id Probolinggo – Polres Probolinggo Polda Jawa Timur meningkatkan pengamanan di sejumlah obyek wisata di wilayah Kabupaten Probolinggo. Kapolres Probolinggo AKBP M. Wahyudin Latif mengatakan, Langkah itu dilakukan guna mengantisipasi lonjakan jumlah kunjungan wisatawan selama periode libur panjang hari raya Iduladha 1447 H/2026. “Pengamanan dilakukan untuk memberikan pelayanan dan rasa aman kepada masyarakat serta wisatawan yang berlibur di sejumlah lokasi wisata Kabupaten Probolinggo,” ucap AKBP Latif, Kamis (28/05).",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260530-WA0010.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/polres-probolinggo-tingkatkan-pengamanan-obyek-wisata-saat-libur-panjang/"
+    },
+    {
+        "title": "Danrem 084/Bhaskara Jaya Kunjungan ke Polygon, Perkuat Semangat Olahraga dan Kebersamaan",
+        "summary": "Detiknews.id Sidoarjo – Semangat membangun kebersamaan melalui olahraga terus diperkuat oleh Korem 084/Bhaskara Jaya. Danrem Brigjen TNI Kohir melaksanakan kunjungan kerja ke pabrik utama Polygon yang berlokasi di Jalan Veteran, Jalan Lingkar Timur, Wadung, Wadungasih, Kecamatan Buduran, Kabupaten Sidoarjo, Jum’at (29/05). Kunjungan tersebut berlangsung hangat dan penuh keakraban. Danrem disambut langsung oleh pimpinan sekaligus pendiri dan CEO PT Insera Sena, produsen sepeda merek Polygon, Soejanto Widjaja atau yang akrab disapa Ko Janto. Pertemuan itu menjadi momentum penting untuk mempererat sinergi dan membuka peluang kerja sama antara Korem dengan Polygon, khususnya dalam mendukung kegiatan olahraga dan pembinaan kebersamaan di tengah masyarakat. Selama ini diketahui rutin menggelar kegiatan Fun Bike atau gowes bersama dalam berbagai momentum, seperti peringatan Hari Ulang Tahun Korem, HUT TNI, maupun peringatan hari besar nasional lainnya.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260530-WA0002.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/danrem-084-bhaskara-jaya-kunjungan-ke-polygon-perkuat-semangat-olahraga-dan-kebersamaan/"
+    },
+    {
+        "title": "Polres Jombang Serahkan Sapi Qurban dari Kapolda Jatim untuk Dua Pondok Pesantren",
+        "summary": "Detiknews.id Jombang – Hari Raya Iduladha 1447 Hijriah, Kapolres Jombang, AKBP Ardi Kurniawan menyerahkan dua ekor sapi kurban bantuan Kapolda Jawa Timur Irjen Pol Nanang Avianto kepada dua pondok pesantren di Kabupaten Jombang, Selasa (26/05). Dua pondok pesantren yang menerima bantuan tersebut yakni Pondok Pesantren Tebuireng di Kecamatan Diwek dan Pondok Pesantren Hafidzul Musthofah Al Hasaniyyah di Desa Mejoyo, Kecamatan Gudo. Di Ponpes Tebuireng, sapi kurban diterima oleh Sekretaris Pondok Pesantren KH Abdul Gofar, sementara di Ponpes Hafidzul Musthofah Al Hasaniyyah, bantuan diterima Ketua Yayasan Hj Nur Zakiyah.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260527-WA0016.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/polres-jombang-serahkan-sapi-qurban-dari-kapolda-jatim-untuk-dua-pondok-pesantren/"
+    },
+    {
+        "title": "Reskrim Polsek Gresik Ringkus Dua Pelaku Curanmor Kurang dari 24 Jam",
+        "summary": "Detiknews.id Gresik – Gerak cepat Unit Reskrim Polsek Gresik Kota membuahkan hasil. Kurang dari 24 jam setelah laporan diterima, dua pelaku pencurian kendaraan bermotor (curanmor) berhasil dibekuk usai polisi menelusuri jejak pelaku melalui rekaman CCTV di sekitar lokasi kejadian. Pengungkapan kasus ini berdasarkan Laporan Polisi di Polsek Gresik Kota Polres Gresik tanggal 27 Mei 2026. Dua tersangka yang diamankan masing-masing berinisial AEN (24) dan AS (17), warga Jalan Dr. Wahidin SH, Kelurahan Kebomas, Kecamatan Kebomas, Gresik. Tersangka AS diketahui merupakan residivis kasus serupa.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260528-WA0026.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/141936/"
+    },
+    {
+        "title": "Kloter ke-116 Diberangkatkan dengan Pesawat Saudia Airlines Melalui Bandara Juanda",
+        "summary": "Detiknews.id Sidoarjo – Kelompok terbang (kloter) terakhir atau kloter ke 116 diberangkatkan pada 21 Mei 2026 pada pukul 23.00 WIB dengan menggunakan pesawat Saudia Airlines rute dari Bandara Internasional Juanda ke Jeddah. Kloter terakhir yang berjumlah 379 calon jamaah haji berasal dari Pasuruan, Surabaya, Sidoarjo dan Malang. Muhammad Tohir selaku General Manager Bandara Internasional Juanda menyampaikan rasa syukurnya seluruh kloter telah berhasil berangkat melalui Bandara Internasional Juanda. “Alhamdulillah 116 kloter telah diberangkatkan untuk melaksanakan ibadah haji. Pelaksaanan embarkasi berjalan lancar dan aman.” Embarkasi berlangsung mulai dari 22 April hingga 21 Mei 2026, jumlah calon jamaah haji yang berangkat dari Bandara Internasional Juanda sebanyak *44.004* calon jamaah.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260522-WA0002-scaled.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/kloter-ke-116-diberangkatkan-dengan-pesawat-saudia-airlines-melalui-bandara-juanda/"
+    },
+    {
+        "title": "Doa Sri Cendani di Balik Dinding yang Pernah Rapuh",
+        "summary": "Detiknews.id Gresik – Di Dusun Lingsir, Desa Slimpit, Kecamatan Kedamean, Gresik, Ibu Sri Cendani (55) pernah hidup dalam bayang-bayang takut. Atap rumahnya bocor, tiang-tiangnya lapuk, dan setiap hujan datang bersama kecemasan seolah angin bisa merobohkan satu-satunya tempat berteduh bagi dirinya dan tiga anaknya.\n‎\n‎Sejak menjadi janda lima tahun lalu, ia bertahan dengan sederhana, membantu usaha servis elektronik milik anak sulungnya. Hidup berjalan pelan, ditemani doa-doa yang tak pernah putus.\n‎\n‎“Saya takut kalau hujan angin, rumah ini roboh,” kenang Sri saat menerima kunjungan tim media dengan penuh suka cita, Selasa (05/05).\n‎\n‎Hari ini, ketakutan itu perlahan hilang berganti harapan pasti. Melalui program TMMD ke-128 Gresik, rumahnya perlahan dibangun kembali.\n‎\n‎“Saya bersyukur… terima kasih kepada Bapak TNI,” ujar Sri sambil tertunduk malu sembari memperbaiki posisi duduknya.\n‎\n‎Bagi Ibu Sri, rumah itu bukan hanya tempat pulang. Ia adalah jawaban dari doa-doa panjang yang akhirnya sampai ke langit.\n‎\n‎“Alhamdulillah, Gusti Allah mengabulkan,” ucapnya dengan nada pelan.\n‎\n‎TNI Manunggal Membangun Desa (TMMD) ke 128 Gresik menjadi bukti nyata bahwa TNI hadir di tengah-tengah masyarakat, dimana program-program TMMD kali ini menjelma menjadi jawaban atas harapan panjang yang diam-diam dipanjatkan warga dalam sunyi.(D1)",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260506-WA0019.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/doa-sri-cendani-di-balik-dinding-yang-pernah-rapuh/"
+    },
+    {
+        "title": "Ditres PPA-PPO Polda Jatim Pulangkan PMI asal Malang Korban di Arab Saudi",
+        "summary": "Detiknews.id Surabaya – Polda Jawa Timur melalui Ditres PPA-PPO berhasil memulangkan seorang Pekerja Migran Indonesia (PMI) asal Kabupaten Malang berinisial NF yang diduga menjadi korban tindak pidana perdagangan orang (TPPO) di Arab Saudi. Korban dipulangkan pada Sabtu (18/04) setelah melalui koordinasi intensif selama kurang lebih dua bulan dengan berbagai instansi terkait, antara lain Kementerian Luar Negeri, KBRI, serta BP3MI Jawa Timur. Dirres PPA-PPO Polda Jatim, Kombes Pol Ganis Setyaningrum, menyampaikan bahwa pemulangan korban merupakan hasil percepatan penanganan kasus setelah pihaknya mengamankan seorang tersangka berinisial MZ (61), warga Kabupaten Malang.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/04/IMG-20260420-WA0003.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/ditres-ppa-ppo-polda-jatim-pulangkan-pmi-asal-malang-korban-di-arab-saudi/"
+    },
+    {
+        "title": "Danrem 084/Bhaskara Jaya Hadiri Groundbreaking Renovasi Masjid At-Taqwa",
+        "summary": "Detiknews.id Surabaya – Danrem 084/Bhaskara Jaya Brigjen TNI Kohir menghadiri kegiatan ground breaking atau peletakan batu pertama renovasi Masjid At-Taqwa yang berlokasi di lingkungan Makodam V/Brawijaya, Senin (18/05). Acara tersebut dipimpin langsung oleh Pangdam V/Brawijaya Mayjen TNI Rudy Saladin, menandai secara resmi dimulainya proses pembangunan dan perbaikan masjid tersebut. Renovasi ini merupakan wujud nyata komitmen TNI Angkatan Darat dalam meningkatkan kualitas fasilitas ibadah agar menjadi lebih nyaman, representatif, dan tetap terbuka bagi masyarakat sekitar. Dalam kesempatannya, Danrem 084/BJ Brigjen TNI Kohir menegaskan bahwa pembangunan atau renovasi tempat ibadah memiliki nilai strategis, khususnya dalam pembentukan karakter prajurit. Menurutnya, masjid tidak hanya berfungsi sebagai tempat beribadah, tetapi juga menjadi pusat pembinaan mental dan spiritual bagi seluruh personel.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260519-WA0003.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/danrem-084-bhaskara-jaya-hadiri-groundbreaking-renovasi-masjid-at-taqwa/"
+    },
+    {
+        "title": "Polres Madiun Kota Resmikan Posko Ojol Kamtibmas, Perkuat Sinergitas",
+        "summary": "Detiknews.id Madiun Kota – Polres Madiun Kota Polda Jatim meresmikan “Posko Ojol Kamtibmas” yang berlokasi di samping Gedung Bharamakota, Jl. Pahlawan, Kota Madiun pada Jum’at (17/04) yang lalu. Kapolres Madiun Kota, AKBP Wiwin Junianto mengatakan fasilitas ini menjadi wujud nyata sinergi antara kepolisian dengan komunitas ojek online (ojol). “Polres Madiun Kota mengajak rekan – rekan Ojol dalam upaya bersama menjaga keamanan dan ketertiban masyarakat,” uacpnya.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/04/IMG-20260419-WA0000.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/polres-madiun-kota-resmikan-posko-ojol-kamtibmas-perkuat-sinergitas/"
+    },
+    {
+        "title": "Polres Probolinggo Dukung Program Pemerintah terkait MBG untuk Pelajar",
+        "summary": "Detiknews.id Probolinggo – Polres Probolinggo Polda Jatim terus berkomitmen dalam mendukung program pemerintah terkait Makan Bergizi Gratis (MBG) bagi para pelajar. Melalui Satuan Pelayanan Pemenuhan Gizi (SPPG) Polres Probolinggo terus memperkuat dalam menjaga kualitas pangan untuk MBG yang didistribusikan ke seluruh pelajar di wilayah hukum Polres Probolinggo Polda Jatim. Kapolres Probolinggo, AKBP M. Wahyudin Latif bersama Ketua Bhayangkari Cabang Probolinggo saat melakukan pengecekan langsung pelaksanaan MBG mengatakan, Polres Probolinggo Polda Jatim saat ini memiliki Satu SPPG yang sudah aktif dan Satu lagi masih dalam tahap pembangunan.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260520-WA0005.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/polres-probolinggo-dukung-program-pemerintah-terkait-mbg-untuk-pelajar/"
+    },
+    {
+        "title": "KAI Daop 8 Surabaya Catat Kinerja Positif Angkutan Barang Tahun 2026",
+        "summary": "Detiknews.id Surabaya – Kereta Api Indonesia (Persero) Daerah Operasi 8 Surabaya mencatatkan kinerja positif pada sektor angkutan barang selama Triwulan I 2026. Sepanjang Januari hingga Maret 2026, volume angkutan barang mencapai 713.125 ton, meningkat sekitar 10% dibandingkan periode yang sama tahun 2025 sebesar 649.263 ton. Peningkatan ini menjadi indikator kuat meningkatnya kepercayaan pelanggan terhadap kereta api sebagai moda transportasi logistik yang andal, efisien, serta semakin relevan dalam mendukung distribusi barang yang berkelanjutan. Dari sisi komoditas, angkutan barang KAI Daop 8 Surabaya didominasi oleh peti kemas dengan volume mencapai 385.088 ton, disusul komoditas strategis lainnya seperti bahan bakar minyak (BBM), semen, pupuk, hingga bahan pangan. Distribusi tersebut menjangkau berbagai wilayah strategis di Jawa Timur melalui jaringan logistik terintegrasi yang menghubungkan pelabuhan, kawasan industri, serta sentra produksi.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/04/IMG-20260425-WA0002-scaled.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/kai-daop-8-surabaya-catat-kinerja-positif-angkutan-barang-tahun-2026/"
+    },
+    {
+        "title": "Menuju Indonesia Emas 2045, Bentuk Generasi Disiplin dan Tangguh",
+        "summary": "Detiknews.id Surabaya — Semangat nasionalisme, penghormatan terhadap jasa orang tua, serta tekad membentuk generasi muda yang disiplin dan tangguh menuju Indonesia Emas 2045 menjadi pesan utama yang disampaikan Komandan Korem 084/Bhaskara Jaya, Brigjen TNI Kohir, saat memberikan pengarahan kepada peserta Korps Kadet Republik Indonesia (KKRI) di Aula Yayasan SMA Gema 45, Jalan Mayjen Sungkono, Sawahan, Surabaya, Jum’at (08/05). Suasana aula tampak penuh antusias. Ratusan pelajar SMA dan SMK yang mengikuti kegiatan tersebut menyimak dengan serius setiap arahan yang diberikan. Kehadiran Danrem tidak hanya memberi motivasi, tetapi juga membangkitkan semangat para siswa untuk menjadi generasi muda yang disiplin, tangguh, berkarakter, dan cinta tanah air sebagai bekal menyongsong Indonesia Emas 2045. Dalam arahannya, Brigjen TNI Kohir menegaskan bahwa generasi muda memiliki tanggung jawab besar dalam menentukan masa depan bangsa. Menurutnya, keberhasilan tidak hanya ditentukan oleh kecerdasan akademik, tetapi juga oleh karakter, integritas, kedisiplinan, serta mental yang kuat menghadapi tantangan zaman.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260509-WA0005.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/menuju-indonesia-emas-2045-bentuk-generasi-disiplin-dan-tangguh/"
+    },
+    {
+        "title": "Peringatan May Day di Stadion Gejos, Kapolres Gresik Apresiasi Buruh dan Masyarakat",
+        "summary": "Detiknews.id Gresik – Peringatan Hari Buruh Internasional (May Day) 2026 di Kabupaten Gresik berlangsung aman, tertib, dan penuh nuansa kebersamaan. Kegiatan yang dipusatkan di Stadion Gelora Joko Samudro (Gejos) ini diisi dengan tasyakuran bersama Forum Koordinasi Pimpinan Daerah (Forkopimda) serta pembagian doorprize bagi para buruh dan pekerja. Kapolres Gresik AKBP Ramadhan Nasution mengapresiasi seluruh elemen buruh dan masyarakat yang telah menjaga kondusivitas selama peringatan May Day. Ia menilai, perayaan tahun ini mencerminkan sinergi yang baik antara pekerja, pemerintah daerah, dan aparat keamanan. “Alhamdulillah, peringatan May Day di Gresik berjalan kondusif, aman, dan penuh kebersamaan. Ini merupakan hasil dari komunikasi yang baik antara semua pihak,” ucap Kapolres, Jum’at (01/05/26).",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260501-WA0009-scaled.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/peringatan-may-day-di-stadion-gejos-kapolres-gresik-apresiasi-buruh-dan-masyarakat/"
+    },
+    {
+        "title": "Kapolres Gresik Tinjau SKCK hingga Layanan 110, Pastikan Pelayanan Optimal",
+        "summary": "Detiknews.id Gresik – Kapolres Gresik AKBP Ramadhan Nasution memastikan pelayanan publik di lingkungan Polres Gresik berjalan optimal dengan melakukan inspeksi mendadak (sidak) ke sejumlah unit layanan, Selasa (12/05). Mulai dari pelayanan Surat Keterangan Catatan Kepolisian (SKCK) hingga kesiapsiagaan operator Hotline 110 dipantau langsung guna memastikan masyarakat mendapat pelayanan yang cepat, humanis, dan responsif. Dalam kegiatan tersebut, Kapolres meninjau langsung pelayanan penerbitan Surat Keterangan Catatan Kepolisian (SKCK) hingga kesiapsiagaan operator Hotline 110 yang menjadi layanan pengaduan darurat masyarakat.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260515-WA0011.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/kapolres-gresik-tinjau-skck-hingga-layanan-110-pastikan-pelayanan-optimal/"
+    },
+    {
+        "title": "Polres Gresik Perkuat Sinergitas dengan Lantik Pengurus DPC APSI",
+        "summary": "Detiknews.id Gresik – Polres Gresik terus memperkuat sinergitas keamanan swakarsa dengan melantik pengurus Dewan Pimpinan Cabang Asosiasi Profesi Satpam Indonesia (APSI) Kabupaten Gresik masa bakti terbaru di Aula Wicaksana Laghawa, Selasa (05/05). Pelantikan ini menjadi langkah strategis dalam meningkatkan profesionalisme Satuan Pengamanan (Satpam) sebagai mitra Polri dalam menjaga stabilitas kamtibmas. Kegiatan yang dihadiri Kapolres Gresik AKBP Ramadhan Nasution, Wakapolres Gresik Kompol Shabda Purusha Putra, perwakilan Binmas Polda Jatim Kompol Bagus, serta Ketua DPD APSI Jawa Timur Peter Soewondo. Dalam sambutannya, Kapolres Gresik AKBP Ramadhan Nasution menyampaikan ucapan selamat kepada jajaran pengurus yang baru dilantik. Ia menegaskan bahwa jabatan yang diemban bukan sekadar seremonial, melainkan amanah besar dalam meningkatkan profesionalisme anggota Satuan Pengamanan (Satpam) sebagai mitra strategis Polri.",
+        "thumbnails": "https://detiknews.id/wp-content/uploads/2026/05/IMG-20260506-WA0014.jpg",
+        "source": "detik",
+        "link": "https://detiknews.id/detiknews/polres-gresik-perkuat-sinergitas-dengan-lantik-pengurus-dpc-apsi/"
+    },
+    {
+        "title": "Lionel Messi Menjawab Keraguan, Waktunya Cristiano Ronaldo Hadapi Tekanan",
+        "summary": "Lionel Messi mencetak hattrick saat Argentina menang 3-0 atas Aljazair dan kini memimpin daftar top skor Piala Dunia 2026 dengan tiga gol. Penampilan Messi dipuji karena membuktikan ia masih mampu tampil di level tertinggi, sekaligus membungkam keraguan soal usia dan kebugarannya. Keberhasilan Messi membuat sorotan beralih ke Cristiano Ronaldo yang akan memulai Piala Dunia 2026 bersama Portugal dan dituntut menunjukkan respons lewat gol serta performa terbaiknya.",
+        "thumbnails": "https://asset.tribunnews.com/gPddoX5R79qjKtTtg0hqPIDdxn8=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/BENDERA-TIMNAS-ARGENTINA-Ilustrasi-bendera-Timnas-Argentina-di-Piala-Dunia-2026.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/superskor/7843178/lionel-messi-menjawab-keraguan-waktunya-cristiano-ronaldo-hadapi-tekanan"
+    },
+    {
+        "title": "Kalemdiklat Polri: Disrupsi Teknologi Jadi Tantangan Nyata Perwira Lulusan STIK",
+        "summary": "Lulusan STIK yang diwisuda akan langsung diterjunkan ke lapangan untuk mengimplementasikan ilmu yang diperoleh selama menempuh pendidikan Tugas kepolisian saat ini tidak hanya dilakukan di ruang fisik, tetapi juga telah meluas ke ruang digital Peningkatan kualitas pendidikan di lingkungan Polri diharapkan dapat melahirkan pemimpin yang lebih profesional, berintegritas, dan memiliki empati terhadap masyarakat",
+        "thumbnails": "https://asset.tribunnews.com/a3H36qcLtS33yss6Tc-qvzvLuEc=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Komjen-Pol-Panca-Putra-Simanjuntak1029.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/nasional/7843238/kalemdiklat-polri-disrupsi-teknologi-jadi-tantangan-nyata-perwira-lulusan-stik"
+    },
+    {
+        "title": "Prabowo Gelar Rapat di Hambalang, Bahas Evaluasi Pelaksanaan Haji",
+        "summary": "Presiden Prabowo Subianto menggelar rapat terbatas di kediamannya di Hambalang, Bogor, pada Rabu (17/6/2026). Rapat tersebut dihadiri oleh Menteri Haji dan Umroh Mochamad Irfan Yusuf (Gus Irfan) serta Wakil Menteri Haji dan Umroh Dahnil Anzar Simanjuntak. Gus Irfan dan Dahnil mengonfirmasi bahwa pemanggilan mereka oleh Presiden bertujuan untuk melaporkan pelaksanaan ibadah haji tahun 2026.",
+        "thumbnails": "https://asset.tribunnews.com/ubfxNxMiW1Wgp1I1lIQUaYKPMAk=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/menteri-rapat-di-hambalang-1.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/nasional/7843188/prabowo-gelar-rapat-di-hambalang-bahas-evaluasi-pelaksanaan-haji"
+    },
+    {
+        "title": "Krisna Murti Tanggapi Elza Syarief yang Mundur Bela Sony Sonjaya",
+        "summary": "Kuasa hukum Sony Sonjaya, Krisna Murti, membantah tuduhan kliennya menutupi kasus korupsi MBG dan mengklaim seluruh keterangan telah disampaikan secara jujur dalam BAP. Mantan pengacara, Elza Syarief, memilih mundur karena menilai Sony tidak jujur terkait penerimaan uang serta merasa akses informasinya dalam perkara tersebut dibatasi oleh pihak tertentu. Kasus korupsi MBG kini melibatkan lima tersangka dari mantan pimpinan BGN dan pihak swasta, yang semuanya telah ditahan Kejaksaan Agung.",
+        "thumbnails": "https://asset.tribunnews.com/hz0xQBo0WLdf5wNZ8q40KwgyMFc=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/kuasa-hukum-djoko-tjandra-krisna-murti-ditemui-saat-jeda-sidang.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/nasional/7843223/krisna-murti-tanggapi-elza-syarief-yang-mundur-bela-sony-sonjaya"
+    },
+    {
+        "title": "Prabowo Batal ke Rusia, Pilih Fokus Selesaikan Urusan Dalam Negeri",
+        "summary": "Presiden Prabowo Subianto batal menghadiri KTT ASEAN-Rusia di Kazan, Rusia, pada 17–19 Juni 2026. Pemerintah menyebut Presiden memilih fokus menyelesaikan sejumlah urusan di dalam negeri. Sejumlah pembahasan dengan Rusia telah dilakukan sebelumnya dan beberapa kerja sama telah memasuki tahap tindak lanjut teknis.",
+        "thumbnails": "https://asset.tribunnews.com/I8ddZeicO99_T1j6CmQKROPptD4=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Prabowo-dan-Vladimir-Putin-4.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/nasional/7843225/prabowo-batal-ke-rusia-pilih-fokus-selesaikan-urusan-dalam-negeri"
+    },
+    {
+        "title": "Asyik, Stasiun Gambir Bisa Layani Penumpang KRL Commuterline Mulai 2028",
+        "summary": "Kemenhub akan segera merenovasi Stasiun Gambir dan kapasitas stasiunnya ditargetkan bisa melayani penumpang KRL Commuterline beroperasi mulai 2028. Perubahan utama pasca renovasi nanti, Stasiun Gambir akan melayani akses naik dan turun penumpang KRL Commuterline. TRIBUNNEWS.COM, JAKARTA - Kementerian Perhubungan (Kemenhub) akan segera merenovasi Stasiun Gambir dan kapasitas stasiunnya ditargetkan bisa melayani penumpang KRL Commuterline beroperasi mulai 2028.",
+        "thumbnails": "https://asset.tribunnews.com/FPXcqabvDvaLDs2AIXN8iH3N1as=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Stasiun-Gambir-H-2-Lebaran-2025.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843205/asyik-stasiun-gambir-bisa-layani-penumpang-krl-commuterline-mulai-2028"
+    },
+    {
+        "title": "Libur Sekolah 2026, Pemerintah Siapkan Diskon Tiket Kereta hingga Kapal",
+        "summary": "Kemenhub menyiapkan stimulus transportasi selama libur sekolah 2026 untuk mendorong wisata dan menggerakkan ekonomi daerah. Program mencakup diskon 30 persen tiket kereta api, tiket kapal Pelni, serta keringanan biaya penyeberangan ASDP. Pemerintah juga menyiapkan insentif penerbangan domestik melalui skema PPN DTP dan potongan biaya layanan bandara.",
+        "thumbnails": "https://asset.tribunnews.com/BEwbBPemBFQQ-qKNeqIHPdEIfD0=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Menteri-Perhubungan-Dudy-Purwagandhi-909.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843216/libur-sekolah-2026-pemerintah-siapkan-diskon-tiket-kereta-hingga-kapal"
+    },
+    {
+        "title": "Pemkab Maros Hadirkan MAPPADECENG, Layanan Jemput Bola untuk Izin UMKM",
+        "summary": "TRIBUNNEWS.COM - Pemerintah Kabupaten (Pemkab) Maros meluncurkan program MAPPADECENG (Model Akselerasi Pelayanan Perizinan Afirmatif dan Cemerlang) sebagai inovasi layanan perizinan di Mall Pelayanan Publik (MPP) Maros pada Kamis (11/6/2026). MAPPADECENG adalah program yang dirancang untuk mempermudah proses pengurusan legalitas usaha, terutama bagi pelaku Usaha Mikro, Kecil, dan Menengah (UMKM). Bupati Maros Chaidir Syam bersama Sekretaris Daerah Provinsi Sulawesi Selatan, Jufri Rahman hadir dalam kegiatan peluncuran inovasi yang digagas Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu (DPMPTSP) Kabupaten Maros tersebut.",
+        "thumbnails": "https://asset.tribunnews.com/j5JsfMuny_kmtwP8LLia9Xjw2O4=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Maros-sebagai-upaya-menghadirkan-layanan-perizinan-jemput-bola-bagi-pelaku-UMKM.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843181/pemkab-maros-hadirkan-mappadeceng-layanan-jemput-bola-untuk-izin-umkm"
+    },
+    {
+        "title": "Pemerintah Ungkap Alasan Rilis BBM B50 Mulai 1 Juli 2026",
+        "summary": "Pemerintah akan resmi menerapkan bahan bakar B50 (campuran 50 persen solar dan 50% minyak sawit) secara serentak mulai 1 Juli 2026. Kebijakan ini bertujuan mengurangi ketergantungan impor solar serta menjaga ketahanan energi nasional dari fluktuasi harga minyak global. Penggunaan B50 didasarkan pada empat parameter (ketersediaan, akses, keterjangkauan, dan ramah lingkungan) serta telah lulus serangkaian uji teknis sejak Desember 2025.",
+        "thumbnails": "https://asset.tribunnews.com/34zXhoxAZpuSkq-VBUWe1XFYJu4=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/B50-pemerintah.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/nasional/7843160/pemerintah-ungkap-alasan-rilis-bbm-b50-mulai-1-juli-2026"
+    },
+    {
+        "title": "Harga Beras Tetap Melejit Padahal Pemerintah Klaim Sudah Swasembada",
+        "summary": "Panjangnya rantai pasok distribusi yang mencapai 7 hingga 9 titik diklaim jadi pemicu utama tingginya disparitas harga. Setiap titik dalam rantai distribusi tersebut membuat setiap lini mengambil margin keuntungan masing-masing. TRIBUNNEWS.COM, JAKARTA - Sekretaris Jenderal Kementerian Pertanian (Kementan) Suwandi membeberkan alasan di balik tingginya harga beras di tingkat konsumen padahal Indonesia sebelumnya diklaim sudah swasembada.",
+        "thumbnails": "https://asset.tribunnews.com/P4QYAkKhtlE3OJC91R--ldEwHhQ=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Pedagang-beras-Sragen-OK.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843186/harga-beras-tetap-melejit-padahal-pemerintah-klaim-sudah-swasembada"
+    },
+    {
+        "title": "Indef Minta Pemerintah Kejar Kemandirian Teknologi untuk Maksimalkan Hilirisasi Mineral",
+        "summary": "INDEF menilai penguasaan teknologi menjadi kunci agar Indonesia tidak hanya menjadi pemasok bahan baku, tetapi mampu memaksimalkan nilai tambah hilirisasi mineral. Skema joint venture dinilai dapat mendorong transfer pengetahuan, namun belum tentu menghasilkan alih teknologi secara penuh. Pemerintah didorong mempercepat pengembangan teknologi dalam negeri melalui kolaborasi industri, riset, dan lembaga seperti BRIN serta Satgas Hilirisasi.",
+        "thumbnails": "https://asset.tribunnews.com/GVoO18xchAY7AkvRy1FLa1vg1Bw=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Imaduddin-Abdullah-indef-78987.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843250/indef-minta-pemerintah-kejar-kemandirian-teknologi-untuk-maksimalkan-hilirisasi-mineral"
+    },
+    {
+        "title": "Rosan Ajukan Tambahan Anggaran Kementerian Investasi Rp578 Miliar ke DPR",
+        "summary": "Kementerian Investasi dan Hilirisasi mengajukan penambahan anggaran untuk merealisasikan program kerja kementerian di tahun anggaran 2027. Kementerian Investasi  ditargetkan mencapai realisasi investasi PMA-PMDN sebesar Rp2.322 triliun atau 13,8 persen lebih tinggi dibandingkan target tahun 2026. TRIBUNNEWS.COM, JAKARTA - Menteri Investasi dan Hilirisasi/Kepala BKPM RI Rosan P Roeslani mengajukan penambahan anggaran untuk merealisasikan program kerja Kementerian Investasi dan Hilirisasi/BKPM di tahun anggaran 2027.",
+        "thumbnails": "https://asset.tribunnews.com/cG1PSWUJ4JMY9HothEtx5kW-RpM=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Rosan-Roeslani-Danantara-evaluasi-KAI.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843058/rosan-ajukan-tambahan-anggaran-kementerian-investasi-rp578-miliar-ke-dpr"
+    },
+    {
+        "title": "Sarmuji: Keterlibatan Negara-Negara Muslim Kunci Tercapainya Perdamaian AS-Iran",
+        "summary": "Kesepakatan damai antara Amerika Serikat dan Iran dinilai Ketua Fraksi Golkar DPR RI M. Sarmuji sebagai bukti bahwa diplomasi tetap menjadi jalan paling efektif menyelesaikan konflik internasional. Ia menekankan bahwa keterlibatan Pakistan, Turki, Qatar, dan Arab Saudi menunjukkan negara berkembang mampu berkontribusi dalam perdamaian global. Kesepakatan itu mencakup penghentian permanen operasi militer, dengan penandatanganan resmi dijadwalkan di Swiss pada 19 Juni 2026.",
+        "thumbnails": "https://asset.tribunnews.com/ky-cpxv4lREuKI6YSOefnf2N2QE=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Sekjen-Partai-Golkar-Muhammad-Sarmuji-2342026.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/internasional/7843167/sarmuji-keterlibatan-negara-negara-muslim-kunci-tercapainya-perdamaian-as-iran"
+    },
+    {
+        "title": "Kemenperin Perkuat Rantai Pasok Industri Pangan Nasional Lewat IFI 2026",
+        "summary": "Industri makanan dan minuman tercatat menjadi kontributor terbesar sektor manufaktur dengan porsi 36,6 persen. IKM masih menjadi fondasi utama struktur industri nasional. Jumlah IKM mencapai 99,7 persen dari total unit usaha industri di Indonesia dan menyerap lebih dari 65 persen tenaga kerja sektor industri",
+        "thumbnails": "https://asset.tribunnews.com/lT6JTCnmuQYOrHBn1_Mmv4VYCX4=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Menteri-Perindustrian-Agus-Gumiwang-Kartasasmita-soal-pertumbuhan-manufaktur.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843153/kemenperin-perkuat-rantai-pasok-industri-pangan-nasional-lewat-ifi-2026"
+    },
+    {
+        "title": "Pascagempa Sulteng, Kemensos Kerahkan Logistik dan Dukungan Kedaruratan",
+        "summary": "Mensos Saifullah Yusuf atau Gus Ipul memastikan jajarannya telah bergerak cepat membantu penanganan dampak gempa yang mengguncang Sulteng. Tim Kemensos saat ini telah berada di lapangan, bekerja di bawah koordinasi BNPB untuk memastikan bantuan darurat dapat segera diterima masyarakat terdampak. Selain menyalurkan bantuan logistik, Kemensos juga menyiapkan tenda-tenda darurat untuk digunakan selama masa tanggap darurat bencana.",
+        "thumbnails": "https://img.youtube.com/vi/6E4t7DG6c6Q/hqdefault.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/regional/7843147/pascagempa-sulteng-kemensos-kerahkan-logistik-dan-dukungan-kedaruratan"
+    },
+    {
+        "title": "Tiga Strategi Kementerian ESDM Percepat Hilirisasi Minerba",
+        "summary": "Pemerintah perlu mempercepat hilirisasi minerba yang berkelanjutan agar memperoleh nilai tambah yang lebih besar dari sumber daya mineral yang dimiliki. Pemerintah juga perlu mempercepat penerapan teknologi yang lebih bersih guna meningkatkan daya saing industri nasional di tengah perkembangan ekonomi rendah karbon. TRIBUNNEWS.COM, JAKARTA - Pemerintah terus mendorong penguatan pengelolaan sumber daya mineral dan batu bara (minerba) untuk meningkatkan nilai tambah sekaligus memperkuat posisi Indonesia dalam rantai pasok mineral kritis dunia dan mempercepat transisi energi bersih.",
+        "thumbnails": "https://asset.tribunnews.com/Ngd55WmeJgKh4i7ebAGJ38mfOk4=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Diskusi-Minerba-dan-Hilirisasi-OK.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843144/tiga-strategi-kementerian-esdm-percepat-hilirisasi-minerba"
+    },
+    {
+        "title": "Kemenhub Minta Tambahan Anggaran Rp 20,11 Triliun Tahun 2027",
+        "summary": "Kemenhub minta tambahan anggaran sebesar Rp20,11 triliun untuk tahun 2027 guna mendukung penyelenggaraan transportasi nasional. Alokasi anggaran sementara yang diterima Kemenhub tahun 2027 sebesar Rp28,34 triliun belum cukup untuk memenuhi berbagai kebutuhan transportasi nasional. TRIBUNNEWS.COM, JAKARTA - Kementerian Perhubungan (Kemenhub) mengusulkan tambahan anggaran sebesar Rp20,11 triliun untuk tahun 2027 guna mendukung penyelenggaraan transportasi nasional, terutama di bidang keselamatan, konektivitas wilayah, dan pelayanan transportasi.",
+        "thumbnails": "https://asset.tribunnews.com/nhZWp6HiKUhoVWFws9LKbRIDOj8=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Kemenhub-minta-tambahan-anggaran-OK.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843151/kemenhub-minta-tambahan-anggaran-rp-2011-triliun-tahun-2027"
+    },
+    {
+        "title": "Brisia Jodie Atur Uang Jajan Alden Lewat Sistem Reimburse",
+        "summary": "Baru 5 bulan nikah, Jonathan Alden serahkan seluruh penghasilannya ke Brisia Jodie demi keuangan yang lebih tertata. Brisia Jodie pegang kendali penuh keuangan, Jonathan Alden harus minta persetujuan istri jika ingin beli kebutuhan pribadi. Terapkan sistem unik, Brisia Jodie percayakan urusan belanja dapur dan kebutuhan pokok diatur oleh sang suami",
+        "thumbnails": "https://asset.tribunnews.com/x8b3XPAo3R_jlXJyC7pCgxI5Ttk=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Brisia-Jodie-dan-Jonathan-Alden-x.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/seleb/7843187/brisia-jodie-atur-uang-jajan-alden-lewat-sistem-reimburse"
+    },
+    {
+        "title": "Dirjen Bimo: Pemungutan Pajak di Marketplace Berlaku Mulai Juli 2026",
+        "summary": "Regulasi baru tentang pemungutan pajak melalui marketplace ditargetkan mulai berjalan di Juli 2026. Terdapat 261 penyelenggara perdagangan melalui sistem elektronik (PMSE) luar negeri yang telah ditunjuk pemerintah untuk memungut pajak. TRIBUNNEWS.COM, JAKARTA - Direktur Jenderal Pajak Kementerian Keuangan Bimo Wijayanto menyatakan, regulasi baru tentang pemungutan pajak melalui marketplace ditargetkan mulai berjalan di Juli 2026.",
+        "thumbnails": "https://asset.tribunnews.com/2oi0LttoMsrYBRPbAtAB87dV-4k=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Bimo-Dirjen-Pajak-OK_.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843123/dirjen-bimo-pemungutan-pajak-di-marketplace-berlaku-mulai-juli-2026"
+    },
+    {
+        "title": "Sejarah dan Penjelasan Mengenai Rangkaian Tradisi Hari Raya Galungan",
+        "summary": "Hari Raya Galungan adalah perayaan suci umat Hindu yang melambangkan kemenangan Dharma (kebaikan) atas Adharma (kejahatan). Perayaan ini diawali dengan berbagai tradisi, seperti Tumpek Wariga, Sugihan Jawa, Sugihan Bali, Penyekeban, Penyajaan, dan Penampahan Galungan. Rangkaian Galungan ditutup dengan Hari Raya Kuningan yang menjadi simbol penghormatan kepada leluhur dan ungkapan syukur kepada Tuhan.",
+        "thumbnails": "https://asset.tribunnews.com/cfYVwWI5qcBj_j-gF46-cfe9eaw=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Hari-Raya-Galungan-di-Pura-Luhur-Dwijawarsa-Malang_20251119_154319.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/nasional/7843066/sejarah-dan-penjelasan-mengenai-rangkaian-tradisi-hari-raya-galungan"
+    },
+    {
+        "title": "Iran Ultimatum Netanyahu, Ancam Gempur Israel jika Lebanon Terus Dibombardir",
+        "summary": "",
+        "thumbnails": "",
+        "source": "tribun",
+        "link": "https://m.tribunnews.com/amp/internasional/7843107/iran-ultimatum-netanyahu-ancam-gempur-israel-jika-lebanon-terus-dibombardir"
+    },
+    {
+        "title": "Gol Rekan Jay Idzes di Sassuolo Batal, 4 Fakta Norwegia Lumat Irak 4-1 di Piala Dunia 2026",
+        "summary": "4 fakta kemenangan timnas Norwegia atas Irak pada laga Grup I Piala Dunia 2026 Erling Haaland panen rekor hingga gol rekan Jay Idzes di Sassuolo batal, menghiasi kemenangan 4-1 Norwegia Erling Haaland mencetak dua gol di debutnya pada ajang Piala Dunia",
+        "thumbnails": "https://asset.tribunnews.com/RGTDCvUbHPcv_ZklSYy7D0zWwV4=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/striker-Norwegia-dan-Irak-di-Piala-Dunia-2026.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/superskor/7842993/gol-rekan-jay-idzes-di-sassuolo-batal-4-fakta-norwegia-lumat-irak-4-1-di-piala-dunia-2026"
+    },
+    {
+        "title": "Lanjutkan Reli, IHSG Pagi Ini Dibuka Menguat Lagi di 6.306",
+        "summary": "IHSG melanjutkan reli pada perdagangan pagi ini setelah menguat di awal pekan ini dengan naik 0,82 persen ke level 6.306,52 pada perdagangan Rabu (17/6/2026) pukul 09.02 WIB. Total volume perdagangan saham di BEI pagi ini mencapai 2,15 miliar dengan nilai transaksi Rp 1,60 triliun dengan 389 saham menguat sebagai penopang indeks dan 105 saham melemah TRIBUNNEWS.COM, JAKARTA - Indeks Harga Saham Gabungan (IHSG) melanjutkan reli pada perdagangan pagi ini setelah menguat di awal pekan ini. Mengutip data Bursa Efek Indonesia (BEI) via RTI, IHSG melesat 0,82 persen ke level 6.306,52 pada perdagangan Rabu (17/6/2026) pukul 09.02 WIB.",
+        "thumbnails": "https://asset.tribunnews.com/PIT176cany8yJw7hfgXP-Zobmu4=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/dilanda-corona-ihsg-melemah_20200305_145137.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/bisnis/7843036/lanjutkan-reli-ihsg-pagi-ini-dibuka-menguat-lagi-di-6306"
+    },
+    {
+        "title": "Faktor Messi Tak Terbantahkan, Hattrick La Pulga Antar Argentina Menang 3-0 atas Aljazair",
+        "summary": "Argentina mengalahkan Aljazair dengan skor telak 3-0 pada pertandingan Grup J Piala Dunia 2026, Rabu (17/6/2026). Messi mencetak hattrick di pertandingan ini pada menit ke 17, 60, dan 76. Tambahan tiga gol membuat Messi menyamai rekor gol sepanjang masa Piala Dunia milik Miroslav Klose, dengan sama-sama mengukir 16 gol.",
+        "thumbnails": "https://asset.tribunnews.com/gPddoX5R79qjKtTtg0hqPIDdxn8=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/BENDERA-TIMNAS-ARGENTINA-Ilustrasi-bendera-Timnas-Argentina-di-Piala-Dunia-2026.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/superskor/7843034/faktor-messi-tak-terbantahkan-hattrick-la-pulga-antar-argentina-menang-3-0-atas-aljazair"
+    },
+    {
+        "title": "KPK Panggil Bos PT Infinity International Usut Kasus Korupsi Importasi Barang di Bea Cukai",
+        "summary": "KPK memanggil Direktur PT Infinity International untuk dimintai keterangan sebagai saksi guna menelusuri lebih jauh jaringan mafia pelabuhan Pemanggilan petinggi PT Infinity International ini diduga kuat merupakan langkah pengembangan dari kasus suap manipulasi importasi barang KPK disinyalir tengah menelusuri apakah terdapat keterlibatan perusahaan importir lain yang turut menggunakan modus serupa untuk mengakali aturan kepabeanan",
+        "thumbnails": "https://asset.tribunnews.com/Jo7Rca0SZ8t4YNVNCBJIMHAdc1Q=/1200x675/filters:upscale():quality(30):format(webp):focal(0.5x0.5:0.5x0.5)/tribunnews/foto/bank/originals/Juru-Bicara-KPK-Budi-Prasetyo-saat-menerangkan-soal-pembelian-rumah-mewah.jpg",
+        "source": "tribun",
+        "link": "https://www.tribunnews.com/nasional/7843220/kpk-panggil-bos-pt-infinity-international-usut-kasus-korupsi-importasi-barang-di-bea-cukai"
+    },
+    {
+        "title": "Buat Apa Manajer Koperasi Desa Mengikuti Pelatihan Militer",
+        "source": "tempo",
+        "summary": "SELAMA satu bulan ke depan, Linda Bunga akan mengikuti pelatihan dasar kemiliteran komponen cadangan (komcad) di Pusat Pendidikan Artileri Pertahanan Udara milik Tentara Nasional Indonesia Angkatan Darat di Kota Batu, Jawa Timur. Pelatihan militer dasar itu dimulai pada Selasa, 16 Juni 2026.",
+        "thumbnails": "https://images-tm.tempo.co/all/2026/06/16/915118/915118_1200.jpg",
+        "link": "https://www.tempo.co/politik/pelatihan-militer-koperasi-desa-merah-putih-2269605"
+    },
+    {
+        "title": "Eks Ketua BEM UGM Tiyo Ardianto Dilaporkan ke Polisi",
+        "source": "tempo",
+        "summary": "KEPOLISIAN Resor Metro Tangerang Selatan menerima laporan terhadap mantan Ketua Badan Eksekutif Mahasiswa Universitas Gadjah Mada (Ketua BEM UGM), Tiyo Ardianto. Laporan tersebut didaftarkan pada Senin, 15 Juni 2026 lalu. Kepala Seksi Hubungan Masyarakat Polres Resor Metro Tangerang Selatan Inspektur Dua Yudhi Susanto telah mengkonfirmasi ihwal adanya pelaporan tersebut. \"Benar sudah ada laporan polisi,\" kata Yudhi kepada Tempo, pada Selasa, 16 Juni 2026. Menurut Yudhi, Tiyo dilaporkan oleh seorang advokat bernama Firdaus Oiwobo. Saat ini sedang dalam proses penyelidikan oleh Satuan Reserse Kriminal Polres Metro Tangerang Selatan.",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/14/id_1477684/1477684_720.jpg",
+        "link": "https://www.tempo.co/hukum/eks-ketua-bem-ugm-tiyo-ardianto-dilaporkan-ke-polisi-2269576"
+    },
+    {
+        "title": "Ketua PP Muhammadiyah Usul Program MBG Dihentikan Sementara",
+        "source": "tempo",
+        "summary": "KETUA Pimpinan Pusat Muhammadiyah, Busyro Muqoddas, mengusulkan agar program makan bergizi gratis (MBG) dihentikan sementara untuk dievaluasi secara menyeluruh. Menurut dia, berbagai langkah koreksi yang belakangan dilakukan pemerintah belum menyentuh akar persoalan program andalan Presiden Prabowo Subianto tersebut. Busyro menilai penataan ulang penerima manfaat maupun rencana pemanfaatan dana tanggung jawab sosial perusahaan atau corporate social responsibility (CSR) untuk mendukung operasional dapur MBG belum cukup menjamin perbaikan pelaksanaan program. \"Minimal menghentikan MBG sementara dulu, kemudian dievaluasi,\" kata Busyro saat ditemui di Gedung PP Muhammadiyah, Jakarta, Selasa, 16 Juni 2026. Menurut Busyro, persoalan mendasar program MBG terletak pada aspek transparansi dan perencanaan yang tidak disusun secara matang sejak awal. Akibatnya, dari hulu ke hilir, proyek prioritas pemerintahan Prabowo ini dipenuhi dengan masalah. Mulai dari tindak pidana korupsi hingga kasus keracunan makanan yang menimpa sejumlah penerima manfaat. keracunan. “Mudharatnya sudah terang-terangan lebih banyak,” tutur dia.",
+        "thumbnails": "https://statik.tempo.co/data/2025/10/15/id_1435015/1435015_720.jpg",
+        "link": "https://www.tempo.co/politik/ketua-pp-muhammadiyah-usul-program-mbg-dihentikan-sementara-2269610"
+    },
+    {
+        "title": "Balik Badan Calon Manajer Koperasi Desa",
+        "source": "tempo",
+        "summary": "KONTROVERSI pembentukan Koperasi Desa/Kelurahan Merah Putih muncul silih berganti. Kontroversi terbaru adalah isi surat pernyataan calon manajer koperasi merah putih dan Koperasi Kampung Neyalan Merah Putih.",
+        "thumbnails": "https://images-tm.tempo.co/all/2026/06/16/915145/915145_1200.jpg",
+        "link": "https://www.tempo.co/politik/calon-manajer-koperasi-desa-mundur-2269606"
+    },
+    {
+        "title": "Air Mendidih Demonstrasi Gen Z",
+        "source": "tempo",
+        "summary": "UNJUK rasa mahasiswa di berbagai penjuru Tanah Air dalam beberapa waktu terakhir menunjukkan bahwa kampus masih menjadi ruang tumbuhnya sikap kritis terhadap berbagai persoalan publik.",
+        "thumbnails": "https://images-tm.tempo.co/all/2026/06/17/915160/915160_1200.jpg",
+        "link": "https://www.tempo.co/kolom/gerakan-demonstrasi-mahasiswa-gen-z-2269613"
+    },
+    {
+        "title": "Jaksa Periksa Maybank dan Anak Usaha Grup Salim. Mengapa?",
+        "source": "tempo",
+        "summary": "KEJAKSAAN Agung memeriksa pegawai Maybank Indonesia terkait dengan kasus ekspor sawit. Hal itu dibenarkan Kepala Pusat Penerangan Hukum Kejaksaan Agung, Anang Supriatna.",
+        "thumbnails": "https://images-tm.tempo.co/all/2023/05/27/832291/832291_1200.jpg",
+        "link": "https://www.tempo.co/hukum/ekspor-sawit-salim-dan-maybank-2269691"
+    },
+    {
+        "title": "Mengapa Harga Daging Ayam Terus Turun",
+        "source": "tempo",
+        "summary": "KURVA pada grafik perkembangan harga daging ayam di tingkat konsumen yang dikelola Kementerian Perdagangan terus turun sejak akhir Mei 2026. Harga daging ayam kian menjauhi harga acuan penjualan (HAP) di tingkat konsumen yang ditetapkan Badan Pangan Nasional senilai Rp 40 ribu per kilogram.",
+        "thumbnails": "https://images-tm.tempo.co/all/2026/06/15/915106/915106_1200.jpg",
+        "link": "https://www.tempo.co/ekonomi/penyebab-harga-daging-ayam-jeblok-2269439"
+    },
+    {
+        "title": "Problemnya Adalah Prabowo",
+        "source": "tempo",
+        "summary": "SIAPA pun yang menjabat Menteri Keuangan, ekonomi Indonesia akan terus tertekan. Problem utama ekonomi Indonesia bukanlah siapa yang menjadi Menteri Keuangan, melainkan kebijakan fiskal Presiden yang sembrono. Gejolak geopolitik akibat perang Iran versus Amerika Serikat-Israel hanya menambah parah apa yang sudah rusak di dalam negeri.",
+        "thumbnails": "https://images-tm.tempo.co/all/2026/06/13/914963/914963_1200.jpg",
+        "link": "https://www.tempo.co/kolom/gagalnya-ekonomi-komando-prabowo-2269055"
+    },
+    {
+        "title": "Cicilan Aset Perkara Eddy Tansil",
+        "source": "tempo",
+        "summary": "LEBIH dari tiga dekade, Eddy Tansil menjadi buron. Ia bisa kabur dari Lembaga Pemasyarakatan Cipinang dengan modus izin berobat ke Rumah Sakit Jantung Harapan Kita. Setelah itu, keberadaan bos Golden Key Group tersebut bagai lenyap ditelan bumi.",
+        "thumbnails": "https://images-tm.tempo.co/all/2026/06/16/915142/915142_1200.jpg",
+        "link": "https://www.tempo.co/hukum/aset-koruptor-eddy-tansil-2269646"
+    },
+    {
+        "title": "Tumpukan Sampah di Sungai Cikapundung",
+        "source": "tempo",
+        "summary": "Hamparan sampah menutupi sebagian permukaan Sungai Cikapundung di Bojongsoang, Kabupaten Bandung, Jawa Barat, 17 Juni 2026. Sampah muncul ketika debit air sungai menyusut dampak musim kemarau. Pemerintah Provinsi Jawa Barat akan segera mempercepat operasional tempat pengolahan akhir sampah di Legoknangka, Kabupaten Bandung, yang mangkrak sejak beberapa tahun lalu. Tempo/Prima Mulia Hamparan sampah menutupi sebagian permukaan Sungai Cikapundung di Bojongsoang, Kabupaten Bandung, Jawa Barat, 17 Juni 2026. Tempo/Prima Mulia Hamparan sampah menutupi sebagian permukaan Sungai Cikapundung di Bojongsoang, Kabupaten Bandung, Jawa Barat, 17 Juni 2026. Tempo/Prima Mulia",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478101/1478101_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/tumpukan-sampah-di-sungai-cikapundung-2269757"
+    },
+    {
+        "title": "Galungan: Kemenangan Dharma dan Tradisi Syukur",
+        "source": "tempo",
+        "summary": "Umat Hindu berdoa ketika mengikuti persembahyangan Hari Raya Galungan di Pura Giri Indra Lokha, Kota Baru, Jambi, 17 Juni 2026. Perayaan hari suci setiap 210 hari ini merupakan simbol kemenangan kebaikan (dharma) atas kejahatan (adharma). Selain ditandai dengan pemasangan penjor di sepanjang jalan sebagai wujud syukur, umat Hindu juga meyakini para leluhur turun ke bumi untuk memberikan berkat, perlindungan, dan kesucian rohani bagi keluarga. Antara/Wahdi Septiawan Umat Hindu membawa sesajen ketika mengikuti persembahyangan Hari Raya Galungan di Pura Jagatnatha, Denpasar, Bali, 17 Juni 2026. Antara/Fikri Yusuf Umat Hindu menyiapkan sesajen ketika mengikuti persembahyangan Hari Raya Galungan di Pura Jagatnatha, Denpasar, Bali, 17 Juni 2026. Antara/Fikri Yusuf",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478106/1478106_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/galungan-kemenangan-dharma-dan-tradisi-syukur-2269774"
+    },
+    {
+        "title": "2026, Tahunnya Sensus Ekonomi",
+        "source": "tempo",
+        "summary": "Petugas sensus ekonomi 2026 melihat tempat usaha peternakan bebek ketika  melakukan pendataan tempat usaha di Lambaro Skep, Banda Aceh, Aceh, 16 Juni 2026. Badan Pusat Statistik Provinsi Aceh mengerahkan 5.328 orang yang merupakan bagian dari 251 ribu petugas di seluruh Indonesia untuk mendata berbagai aktivitas ekonomi, mulai dari rumah tangga usaha, UMKM, pasar tradisional, warung makan, toko kelontong, hingga perusahaan besar pada sensus ekonomi yang berlangsung pada 15 Juni hingga 31 Agustus 2026. ANTARA/Irwansyah Putra Petugas sensus ekonomi 2026 melakukan pendataan tempat produksi Usaha Mikro, Kecil dan Menengah (UMKM) ikan kayu di Lambaro Skep, Banda Aceh, Aceh, 16 Juni 2026. ANTARA/Irwansyah Putra Petugas sensus ekonomi 2026 melakukan pendataan tempat produksi Usaha Mikro, Kecil dan Menengah (UMKM) di Lambaro Skep, Banda Aceh, Aceh, 16 Juni 2026. ANTARA/Irwansyah Putra",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478053/1478053_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/2026-tahunnya-sensus-ekonomi-2269658"
+    },
+    {
+        "title": "Kawasan Kota Tua Jakarta dari Masa ke Masa",
+        "source": "tempo",
+        "summary": "Gedung kantor Gubernur VOC yang kini menjadi Museum Sejarah Jakarta di Jakarta, 1875. Suasana Kota Tua Jakarta dari masa kolonial hingga kini yang mencerminkan perubahan lanskap dan aktivitas perkotaan. Dok. Wereldmuseum/Collectie Wereldmuseum Kawasan \"French Quarter\" di Oud Batavia yang kini Kota Tua Jakarta, 1924-1932. Dok. Wereldmuseum/Collectie Wereldmuseum Warga mencuci pakaian di salah satu kali di Oud Batavia yang kini Kota Tua Jakarta, 1947. Dok. Wereldmuseum/Collectie Wereldmuseum",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478039/1478039_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/kawasan-kota-tua-jakarta-dari-masa-ke-masa-2269640"
+    },
+    {
+        "title": "Penyaluran KUR Hingga Juni 2026 Mencapai Rp 124,7 Triliun",
+        "source": "tempo",
+        "summary": "Pekerja menyusun adonan kerupuk di industri rumahan kerupuk Fajar di Lamper Tengah, Semarang, Jawa Tengah, 17 Juni 2026. Kementerian Keuangan (Kemenkeu) mencatat realisasi penyaluran Kredit Usaha Rakyat (KUR) hingga 8 Juni mencapai Rp124,7 triliun atau 44,7 persen dari target penyaluran tahun ini sebesar Rp279 triliun dan telah menjangkau 1,98 juta debitur. ANTARA/Aprillio Akbar Pekerja menjemur kerupuk di industri rumahan kerupuk Fajar di Lamper Tengah, Semarang, Jawa Tengah, 17 Juni 2026. ANTARA/Aprillio Akbar Pekerja menyusun adonan kerupuk di industri rumahan kerupuk Fajar di Lamper Tengah, Semarang, Jawa Tengah, 17 Juni 2026. ANTARA/Aprillio Akbar",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478065/1478065_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/penyaluran-kur-hingga-juni-2026-mencapai-rp-124-7-triliun-2269695"
+    },
+    {
+        "title": "Perayaan Tahun Baru Islam di Berbagai Daerah",
+        "source": "tempo",
+        "summary": "Karnaval budaya untuk merayakan Tahun Baru Islam 1 Muharam 1448 Hijriah di Sepanjang, Sidoarjo, Jawa Timur, 16 Juni 2026. Perayaan Tahun Baru Islam digelar di berbagai daerah dengan beragam tradisi dan hiburan yang melibatkan masyarakat. ANTARA/Umarul Faruq Abdi dalem membawa pusaka keraton ketika mengikuti kirab Satu Sura untuk memperingati pergantian tahun baru Hijriah di Keraton Kasunanan, Solo, Jawa Tengah, 16 Juni 2026. ANTARA/Mohammad Ayudha Kirab ritual Satu Sura untuk merayakan Tahun Baru Islam 1 Muharam 1448 Hijriah di Desa Wisata Budaya Menang, Kabupaten Kediri, Jawa Timur, 16 Juni 2026. ANTARA/Prasetia Fauzani",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478031/1478031_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/perayaan-tahun-baru-islam-di-berbagai-daerah-2269628"
+    },
+    {
+        "title": "Menengok Progres Pembangunan Hunian Sementara untuk Warga Bantaran Rel KA",
+        "source": "tempo",
+        "summary": "Kondisi hunian sementara warga bantaran rel Senen di Jalan Kramat Jati, Kecamatan Senen, Jakarta, 16 Juni 2026. Sebanyak 324 unit hunian bagi warga yang direlokasi dari bantaran rel kereta api di kawasan Senen  dengan fasilitas berupa toilet, musala dapur umum, ruang komunal, taman bermain anak, area parkir, wifi, hingga kebun hidroponik yang dibangun diatas tanah seluas 1,61 hektare telah siap ditempati. Tempo/Muhammad Zaki Fauzi Kondisi kamar hunian sementara warga bantaran rel Senen di Jalan Kramat Jati, Kecamatan Senen, Jakarta, 16 Juni 2026.  Tempo/Muhammad Zaki Fauzi Petugas merapikan kawasan hunian sementara warga bantaran rel Senen di Jalan Kramat Jati, Kecamatan Senen, Jakarta, 16 Juni 2026. Tempo/Muhammad Zaki Fauzi",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/16/id_1477983/1477983_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/menengok-progres-pembangunan-hunian-sementara-untuk-warga-bantaran-rel-ka-2269548"
+    },
+    {
+        "title": "Pertemuan Muhammadiyah dan Amnesty Internasional Bahas Pelemahan Suara Kritis Warga",
+        "source": "tempo",
+        "summary": "Ketua PP Muhammadiyah Muhammad Busyro Muqoddas (kanan) bersama  Direktur Eksekutif Amnesty International Indonesia Usman Hamid (kiri) memberikan keterangan pers setelah mengadakan pertemuan di Kantor PP Muhammadiyah, Menteng, Jakarta, 16 Juni 2026. Tempo/Amston Probel Ketua PP Muhammadiyah Muhammad Busyro Muqoddas (kanan) memberi keterangan pers setelah mengadakan pertemuan dengan Direktur Eksekutif Amnesty International Indonesia Usman Hamid (kiri)  di Kantor PP Muhammadiyah, Menteng, Jakarta, 16 Juni 2026. Tempo/Amston Probel Ketua PP Muhammadiyah Muhammad Busyro Muqoddas (kanan) bersama  Direktur Eksekutif Amnesty International Indonesia Usman Hamid (kiri) memberikan keterangan pers setelah mengadakan pertemuan di Kantor PP Muhammadiyah, Menteng, Jakarta, 16 Juni 2026. Tempo/Amston Probel",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/16/id_1478003/1478003_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/pertemuan-muhammadiyah-dan-amnesty-internasional-bahas-pelemahan-suara-kritis-warga-2269575"
+    },
+    {
+        "title": "Deretan Pemain Tertua yang Masuk Skuad Piala Dunia 2026",
+        "source": "tempo",
+        "summary": "Kiper Skotlandia Craig Gordon, menjelang pertandingan melawan Polandia pada laha UEFA Nations League di PGE Narodowy, Warsaw, Polandia. Craig Gordon menjadi pemain tertua yang masuk skuad Piala Dunia 2026 dengan usia 43 tahun 162. Shutterstock Pemain Portugal Cristiano Ronaldo ketika melawan Jerman pada laga semifinal UEFA Nations League 2025  di Allianz Arena, Munichs, 4 Juni 2025. Cristiano Ronaldo telah tampil di enam edisi Piala Dunia yang kini berusia 41 tahun 126 hari. Shutterstock Kiper Meksiko Guillermo Ochoa ketika tampil melawan Portugal pada perebutan juara ketiga FIFA Confederations di Moskow, Rusia. Guillermo  Ochoa mencatatkan sejarah dengan tampil dalam 6 edisi Piala Dunia bersama Timnas Meksiko yang kini berusia 40 tahun 333 hari. Shutterstock",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478083/1478083_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/deretan-pemain-tertua-yang-masuk-skuad-piala-dunia-2026-2269705"
+    },
+    {
+        "title": "Dosen Atma Jaya Dipecat Pasca-adukan Praktik Jurnal Predator",
+        "source": "tempo",
+        "summary": "UNIVERSITAS Atma Jaya Yogyakarta merespons tersiarnya informasi pemberhentian tidak dengan hormat seorang dosen perempuan yang bertugas di Fakultas Hukum universitas tersebut. Isu pemecatan dosen itu sempat viral di media sosial pekan lalu setelah adanya utas dari Lembaga Bantuan Hukum (LBH) Yogyakarta. LBH Yogyakarta mengunggah di media sosial yang menyebut dosen itu mengalami pemutusan hubungan kerja (PHK). Dosen itu mengaku dipecat setelah mengkritik dan melaporkan keberadaan publikasi dugaan jurnal predator yang melibatkan sejumlah akademisi kampus itu. Jurnal predator merujuk penerbitan karya ilmiah dengan tujuan meraup keuntungan finansial dari biaya publikasi yang dibayarkan oleh penulis. Tidak ada proses seleksi karya ilmiah yang benar dan dapat dipertanggungjawabkan.",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/14/id_1477678/1477678_720.jpg",
+        "link": "https://www.tempo.co/politik/dosen-atma-jaya-dipecat-pasca-adukan-praktik-jurnal-predator-2269122"
+    },
+    {
+        "title": "Pameran Gim Interaktif dari Belanda",
+        "source": "tempo",
+        "summary": "Permainan video gim dalam pameran bertajuk \"Clogs, Tulips, and Video Games\" di Erasmus Huis, Kuningan, Jakarta, 16 Juni 2026. Pengunjung memainkan gim dalam pameran interaktif yang menampilkan 12 gim karya pengembang Belanda hingga 29 Agustus 2026. Tempo/Ilham Balindra Permainan video gim dalam pameran bertajuk \"Clogs, Tulips, and Video Games\" di Erasmus Huis, Kuningan, Jakarta, 16 Juni 2026. Tempo/Ilham Balindra Permainan video gim dalam pameran bertajuk \"Clogs, Tulips, and Video Games\" di Erasmus Huis, Kuningan, Jakarta, 16 Juni 2026. Tempo/Ilham Balindra",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/16/id_1477988/1477988_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/pameran-gim-interaktif-dari-belanda-2269530"
+    },
+    {
+        "title": "Lima Negara dengan Gelar Juara Piala Dunia Terbanyak",
+        "source": "tempo",
+        "summary": "Pemain Brasil Vinicius Junior (bawah) merayakan gol pertamanya untuk tim nasional Brasil bersama Neymar dalam laga kualifikasi Piala Dunia 2022 di Stadion Maracana, Rio de Janeiro, Brasil, 24 Maret 2022. Brasil merupakan negara pemenang Piala Dunia terbanyak. Tim itu lima kali menjadi juara pada 1958, 1962, 1970, 1994, dan 2002.  Shutterstock Tim nasional Jerman merayakan kemenangan setelah pertandingan final Piala Dunia 2014 antara Jerman dan Argentina di Stadion Maracana, Rio de Janeiro, Brasil, 2014. Jerman menjadi negara kedua pemenang Piala Dunia terbanyak dengan empat gelar juara. Shutterstock Pemain tim nasional Italia merayakan kemenangan setelah mengalahkan Prancis pada final Piala Dunia 2006 di Stadion Olimpiade Berlin, Jerman, 2006. Italia empat kali menjadi juara dunia. Shutterstock",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/17/id_1478095/1478095_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/lima-negara-dengan-gelar-juara-piala-dunia-terbanyak-2269746"
+    },
+    {
+        "title": "Kirab Perayaan Kedatangan Kimsin Dewa Obat",
+        "source": "tempo",
+        "summary": "Kirab perayaan 166 tahun kedatangan kimsin Poo Seng Tay Tee atau Dewa Obat di kawasan Pecinan Semarang, Jawa Tengah, 16 Juni 2026. Perayaan yang dipusatkan di Kelenteng Tay Kak Sie Semarang merupakan simbol kesembuhan, tolak bala pengharapan agar masyarakat terbebas dari penyakit. Tempo/Budi Purwanto Atraksi liong pada perayaan 166 tahun kedatangan kimsin Poo Seng Tay Tee atau Dewa Obat di kawasan Pecinan Semarang, Jawa Tengah, 16 Juni 2026. Tempo/Budi Purwanto Kirab perayaan 166 tahun kedatangan kimsin Poo Seng Tay Tee atau Dewa Obat di kawasan Pecinan Semarang, Jawa Tengah, 16 Juni 2026. Tempo/Budi Purwanto",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/16/id_1478008/1478008_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/kirab-perayaan-kedatangan-kimsin-dewa-obat-2269579"
+    },
+    {
+        "title": "Kepadatan Ancol pada Libur 1 Muharram",
+        "source": "tempo",
+        "summary": "Pengunjung berwisata di Pantai Lagoon, Taman Impian Ancol, Jakarta, 16 Juni 2026. Pengelola Ancol Taman Impian mencatat jumlah pengunjung mencapai 46.420 orang pada hari libur 1 Muharram. Tempo/Muhammad Zaki Fauzi Pengunjung bermain sepak bola  di Pantai Lagoon, Taman Impian Ancol, Jakarta, 16 Juni 2026. Tempo/Muhammad Zaki Fauzi Pengunjung berwisata di Pantai Lagoon, Taman Impian Ancol, Jakarta, 16 Juni 2026. Tempo/Muhammad Zaki Fauzi",
+        "thumbnails": "https://statik.tempo.co/data/2026/06/16/id_1478017/1478017_720.jpg",
+        "link": "https://www.tempo.co/foto/arsip/kepadatan-ancol-pada-libur-1-muharram-2269592"
+    },
+    {
+        "title": "Bisakah Harga BBM Turun Setelah Selat Hormuz Dibuka",
+        "source": "tempo",
+        "summary": "PEMBAHASAN kesepakatan damai antara Amerika Serikat dan Iran memicu penurunan harga minyak dunia. Presiden Amerika Serikat Donald Trump menyatakan kesepakatan tersebut akan dibarengi pembukaan kembali Selat Hormuz, jalur strategis yang dilalui sekitar 20 persen pasokan minyak dunia.",
+        "thumbnails": "https://images-tm.tempo.co/all/2026/06/16/915132/915132_1200.jpg",
+        "link": "https://www.tempo.co/ekonomi/harga-bbm-setelah-selat-hormuz-dibuka-2269632"
+    },
+    {
+        "title": "Kemendikti Akan Tutup Prodi yang Tak Relevan dengan Industri",
+        "source": "tempo",
+        "summary": "KEMENTERIAN Pendidikan Tinggi, Sains, dan Teknologi berencana menutup berbagai program studi yang dinilai kurang relevan dengan kebutuhan industri pertumbuhan ekonomi di masa depan. Rencana ini disampaikan oleh Sekretaris Jenderal Kemendiktisaintek Badri Munir Sukoco dalam Simposium Nasional Kependudukan Tahun 2026 di Kabupaten Badung, Bali, pada Kamis, 23 April 2026. Badri mengatakan rencana ini akan dieksekusi dalam waktu dekat. Ia lantas meminta perguruan tinggi memiliki kerelaan hati untuk menyeleksi prodi apa saja yang perlu ditutup. “Nanti mungkin ada beberapa yang harus kami eksekusi dalam waktu tidak terlalu lama terkait dengan prodi-prodi, perlu kita pilih, kita pilah, dan kalau perlu ditutup untuk bisa meningkatkan relevansi,” kata Badri Munir Sukoco, dipantau dari siaran ulang Youtube Kementerian Kependudukan dan Pembangunan Keluarga.",
+        "thumbnails": "https://statik.tempo.co/data/2026/04/25/id_1470529/1470529_720.jpg",
+        "link": "https://www.tempo.co/politik/kemendikti-akan-tutup-prodi-yang-tak-relevan-dengan-industri-2131624"
+    }
+];
+store_data(dataBerita4);

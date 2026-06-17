@@ -1,5 +1,6 @@
 const axios = require("axios");
 const cheerio = require("cheerio");
+const { formatRelativeTime } = require("./helper");
 
 const url_home_detik = "https://news.detik.com";
 const url_popularNews_detik = "https://www.detik.com/terpopuler";
@@ -280,7 +281,7 @@ async function get_latestNews_tempo() {
         link: `https://www.tempo.co/${item.canonical_url}`,
         source: "tempo",
         image: item.feature_image,
-        pubDate: item.published_at,
+        pubDate: formatRelativeTime(item.published_at),
     }));
 }
 

@@ -9,8 +9,8 @@ const { scraping_tribunnews, scraping_tribunnews_for_cluster } = require("./scra
 const { scraping_kompas, scraping_kompas_for_cluster } = require("./scraping_kompas");
 const { get_headlineNews_detik, get_PopularNews, get_latestNews_tribun, get_latestNews_kompas, get_latestNews_tempo, get_latestNews_detik } = require("./get_headline_news");
 const { getAllLinkMedia_for_cluster, getDecodedLinks } = require('./scraping_raw_cluster');
-const { get_popular_page_kompas } = require("./popular_news");
 const { upload, uploadProfile } = require('./setting_profile');
+const { get_popular_page_detik, get_popular_page_kompas, get_popular_page_tempo, get_popular_page_tribun } = require("./popular_news");
 require('dotenv').config();
 //const { AppErrorCodes } = require("firebase-admin/app");
 
@@ -104,11 +104,39 @@ app.get("/homepage", async (req, res) => {
 
 // popular news
 app.get("/popular_news_page", async (req, res) => {
-    console.log('ada requst masuk untuk: /popular_news_page');
+    console.log("ada request masuk untuk: /popular_news_page");
+
     try {
-        const result = await get_popular_page_kompas();
+        const media = req.query.media;
+
+        let result;
+
+        switch (media) {
+            case "kompas":
+                result = await get_popular_page_kompas();
+                break;
+
+            case "detik":
+                result = await get_popular_page_detik();
+                break;
+
+            case "tempo":
+                result = await get_popular_page_tempo();
+                break;
+
+            case "tribun":
+                result = await get_popular_page_tribun();
+                break;
+
+            default:
+                return res.status(400).json({
+                    success: false,
+                    message: "media harus: kompas | detik | tempo | tribun"
+                });
+        }
 
         res.json(result);
+
     } catch (error) {
         res.status(500).json({
             success: false,

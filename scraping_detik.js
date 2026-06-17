@@ -14,16 +14,20 @@ async function scraping_detik(url) {
 
     const $ = cheerio.load(data);
 
-    const title = $("h1.detail__title").text().trim();
+    const title =
+        $("h1.detail__title").text().trim() ||
+        $("h1").first().text().trim();
 
-    //const subtitle = $(".font-roboserif").first().text().trim();
+    const pubDate =
+        $(".detail__date").first().text().trim() ||
+        $("time").first().text().trim();
 
-    const pubDate = $(".detail__date").first().text().trim();
+    const article = $(".detail__body-text").first().clone();
 
-    const article = $(".detail__body-text").clone();
-
-    const image = $(".detail__media img")
-        .attr("src") || "";
+    const image =
+        $(".detail__media img").first().attr("src") ||
+        $("figure img").first().attr("src") ||
+        "";
 
     // hapus elemen bukan isi artikel
     article.find(".noncontent").remove();
@@ -33,17 +37,36 @@ async function scraping_detik(url) {
     article.find("table").remove();
     article.find(".detail__body-tag").remove();
     article.find(".clearfix").remove();
-    article.find(".ads-scrollpage-container");
+    article.find(".linksisip").remove();
+    article.find(".lihatjg").remove();
+    article.find(".sisip_embed_sosmed").remove();
+    article.find(".ads-scrollpage-container").remove();
 
     const content = [];
     const source = "Detik";
 
+    // ambil lead paragraph yang berada di luar <p>
+    const intro = article
+        .clone()
+        .children()
+        .remove()
+        .end()
+        .text()
+        .trim();
+
+    if (
+        intro &&
+        intro.length > 20
+    ) {
+        content.push(intro);
+    }
+
     article.find("p").each((_, el) => {
+
         let text = $(el).text().trim();
 
         if (!text) return;
 
-        // filter text yang tidak diperlukan
         if (
             text.includes("Baca juga") ||
             text.includes("Lihat juga Video") ||
@@ -69,7 +92,7 @@ async function scraping_detik(url) {
         content,
         source,
         image
-    }
+    };
 }
 
 async function scraping_detikId_for_cluster(url) {
@@ -88,8 +111,9 @@ async function scraping_detikId_for_cluster(url) {
 
     const article = $(".entry-content").clone();
 
-    const thumbnails = $(".content-thumbnail img")
-        .attr("src") || "";
+    const thumbnails = $(".detail__media img").first().attr("src") ||
+        $("figure img").first().attr("src") ||
+        "";
 
     const source = "Detik";
 
@@ -164,8 +188,9 @@ async function scraping_detikCom_for_cluster(url) {
 
     const article = $(".detail__body-text").clone();
 
-    const thumbnails = $(".detail__media img")
-        .attr("src") || "";
+    const thumbnails = $(".detail__media img").first().attr("src") ||
+        $("figure img").first().attr("src") ||
+        "";
 
     // hapus elemen bukan isi artikel
     article.find(".noncontent").remove();
